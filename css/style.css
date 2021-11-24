@@ -25,6 +25,7 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -48,13 +49,37 @@ img {
   vertical-align: bottom;
 }
 
+input {
+  display: block;
+}
+
 .container {
   
 }
 
 
 /********** Header ***********/
+.header { }
+.container { }
+.header__top { }
+.header__logo {
+  width: 144px;
+}
+.search { }
+.search__input { }
+.search__button { }
+.user { }
+.user__img-box {
+  width: 40px;
+}
 
+.user__img-box img {
+  border-radius: 50%;
+  height: 40px;
+}
+.user__name { }
+.header-nav { }
+.header-nav__item { }
 
 
 /************ Main ***********/
