@@ -71,7 +71,7 @@
 
 /******** Base styles **********/
 
-/* .visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -83,7 +83,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -113,7 +113,7 @@ ul, li {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   vertical-align: bottom;
 }
