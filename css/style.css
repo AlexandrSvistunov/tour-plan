@@ -1,3 +1,72 @@
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish"),
+  url("../fonts/Mulish-Regular.woff2") format("woff2"),
+  url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish"),
+  url("../fonts/Mulish-Bold.woff2") format("woff2"),
+  url("../fonts/Mulish-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish"),
+  url("../fonts/Mulish-SemiBold.woff2") format("woff2"),
+  url("../fonts/Mulish-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish"),
+  url("../fonts/Mulish-Light.woff2") format("woff2"),
+  url("../fonts/Mulish-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+  url("../fonts/Nunito-Regular.woff2") format("woff2"),
+  url("../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+  url("../fonts/Nunito-SemiBold.woff2") format("woff2"),
+  url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+  url("../fonts/Nunito-ExtraBold.woff2") format("woff2"),
+  url("../fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 /******** Base styles **********/
@@ -59,15 +128,20 @@ input {
 
 
 /********** Header ***********/
-.header { }
-.header__top { }
+.header {}
+.header__top {}
 .header__logo {
   width: 144px;
 }
-.search { }
-.search__input { }
-.search__button { }
-.user { }
+.search {}
+.search__input {
+
+
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+.search__button {}
+.user {}
 .user__img-box {
   width: 40px;
 }
@@ -76,9 +150,19 @@ input {
   border-radius: 50%;
   height: 40px;
 }
-.user__name { }
-.header-nav { }
-.header-nav__item { }
+.user__name {
+
+
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+.header-nav {}
+.header-nav__item {
+
+
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
 
 
 /************ Main ***********/
