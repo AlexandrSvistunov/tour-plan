@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel booking</title>
@@ -16,20 +16,24 @@
       <div class="container">
         <div class="header__top">
           <a href="index.html" class="header__logo">
-            <img src="img/svg/header-logo.svg" alt="Logo: Best Tour Plan">
+            <img src="img/svg/header-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
           <form action="#" class="search">
-            <input type="text" class="search__input" placeholder="Search Location">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+            />
             <button class="search__button">
-              <img src="img/svg/search.svg" alt="Icon: search">
+              <img src="img/svg/search.svg" alt="Icon: search" />
             </button>
           </form>
           <!-- /.search -->
           <a href="#" class="user">
             <div class="user__img-box">
-              <img src="img/user-avatar.jpg" alt="User avatar">
+              <img src="img/user-avatar.jpg" alt="User avatar" />
             </div>
-            <span class="user__name">Nathan</span>  
+            <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
         </div>
@@ -48,19 +52,297 @@
       </div>
       <!-- /.header-container -->
     </header>
+    <!-- /.header -->
 
     <!-- Main -->
     <main class="main">
-      
+      <div class="container">
+        <div class="bread-crumbs">
+          <a href="#" class="bread-crumbs__item">Home</a><span>/</span>
+          <a href="#" class="bread-crumbs__item">Flash Offers</a><span>/</span>
+          <a href="#" class="bread-crumbs__item">Grand Hilton Hotel</a>
+        </div>
+        <!-- /.bread-crumbs -->
+
+        <!-- Hotel -->
+        <section class="hotel">
+          <h1 class="visually-hidden">Hotel booking</h1>
+          <header class="hotel__header">
+            <div class="hotel__header-main">
+              <div class="stars">
+                <img
+                  class="stars__img"
+                  src="/img/svg/star.svg"
+                  alt="Hotel star"
+                />
+                <img
+                  class="stars__img"
+                  src="/img/svg/star.svg"
+                  alt="Hotel star"
+                />
+                <img
+                  class="stars__img"
+                  src="/img/svg/star.svg"
+                  alt="Hotel star"
+                />
+                <img
+                  class="stars__img"
+                  src="/img/svg/star.svg"
+                  alt="Hotel star"
+                />
+                <img
+                  class="stars__img"
+                  src="/img/svg/star.svg"
+                  alt="Hotel star"
+                />
+              </div>
+              <!-- /.stars -->
+              <div class="hotel__header-title">
+                <h2>GRAND HILTON HOTEL</h2>
+                <button class="flash-offer">Flash Offer</button>
+              </div>
+              <p class="hotel__header-benefits">
+                Half-Board/ All Inclusive + Complimentary Activities + Child
+                Stays Free
+              </p>
+            </div>
+            <!-- /.hotel__header-title -->
+            <div class="hotel__header-raiting">
+              <span>User Rattings</span>
+              <span>4.5/5</span>
+            </div>
+            <!-- /.hotel__header-raiting -->
+          </header>
+          <!-- /.hotel__header -->
+          <div class="hotel__main">
+            <div class="hotel-img">
+              <img src="/img/hotel-img.jpg" alt="Hotel image" />
+            </div>
+            <div class="booking">
+              <div class="booking__quick">
+                <div class="booking-info">
+                  <div class="booking-info__left">
+                    <span>price starts as</span>
+                    <span>$ 8,500</span>
+                    <span>per room / night</span>
+                    <span>Quick Booking</span>
+                  </div>
+                  <div class="booking-info__right">
+                    <p>
+                      <img src="/img/svg/user.svg" alt="" />
+                      <span>2 x Guests</span>
+                    </p>
+                    <p>
+                      <img src="/img/svg/home.svg" alt="" />
+                      <span>1 x Room</span>
+                    </p>
+                    <p>
+                      <img src="/img/svg/phone-call.svg" alt="" />
+                      <span>12100</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="booking__map">
+                <img src="/img/map.png" alt="Map" />
+              </div>
+            </div>
+            <!-- /.hotel__booking -->
+          </div>
+          <!-- /.hotel__main -->
+        </section>
+        <!-- /.hotel -->
+      </div>
+      <!-- /.hotel-container -->
+
+      <!-- Subscribe -->
+      <section class="subscribe">
+        <div class="subscribe__wrapper">
+          <h2 class="subscribe__title">
+            subscribe to our<br /><span>Newsletter</span>
+          </h2>
+          <form action="#" class="send-mail">
+            <input
+              type="text"
+              class="send-mail__input"
+              placeholder="Your email address"
+            />
+            <button class="send-mail__button">Send</button>
+          </form>
+        </div>
+        <!-- /.subscribe__wrapper -->
+      </section>
+      <!-- /.subscribe -->
+
+      <!-- Reviews -->
+      <section class="reviews">
+        <div class="connainer">
+          <div class="reviews__wrapper">
+            <h2 class="reviews__tile">What people think about us</h2>
+            <div class="reviews__gallery">
+              <div class="reviews__img-box">
+                <img src="/img/guest-avatar.jpg" alt="Guest-avatar" />
+              </div>
+              <div class="reviews__guest-info">
+                <span class="guest-name">Megan Fox</span>
+                <span class="time-stay"></span>
+                <div class="stars">
+                  <img
+                    class="stars__img"
+                    src="/img/svg/star.svg"
+                    alt="Hotel star"
+                  />
+                  <img
+                    class="stars__img"
+                    src="/img/svg/star.svg"
+                    alt="Hotel star"
+                  />
+                  <img
+                    class="stars__img"
+                    src="/img/svg/star.svg"
+                    alt="Hotel star"
+                  />
+                  <img
+                    class="stars__img"
+                    src="/img/svg/star.svg"
+                    alt="Hotel star"
+                  />
+                  <img
+                    class="stars__img"
+                    src="/img/svg/star.svg"
+                    alt="Hotel star"
+                  />
+                </div>
+              </div>
+              <!-- /.reviews__guest-info -->
+              <div class="reviews__guest-text">
+                <p>
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+            </div>
+            <!-- /.reviews__gallery -->
+          </div>
+          <!-- /.reviews__wrapper -->
+        </div>
+        <!-- /.reviews-container -->
+      </section>
+      <!-- /.reviews -->
+
+      <!-- Activities -->
+      <section class="activities">
+        <div class="container">
+          <div class="activities__wrapper">
+            <div class="activities__item">
+              <h3 class="activities__item-title">The curious corner 
+                of chamarel</h3>
+              <button class="activities__item-button">Book Now</button>
+            </div>
+            <!-- /.activities-item -->
+            <div class="activities__item">
+              <h3 class="activities__item-title">Gymkhana club golf
+                course</h3>
+              <button class="activities__item-button">Book Now</button>
+            </div>
+            <!-- /.activities-item -->
+            <div class="activities__item">
+              <h3 class="activities__item-title">Tamarind falls hiking
+                trip - full day</h3>
+              <button class="activities__item-button">Book Now</button>
+            </div>
+            <!-- /.activities-item -->
+            <div class="activities__item">
+              <h3 class="activities__item-title">The blue marine discovery
+                quest</h3>
+              <button class="activities__item-button">Book Now</button>
+            </div>
+            <!-- /.activities-item -->
+          </div>
+          <!-- /.activities-wrapper -->
+        </div>
+        <!-- /.activities-container -->
+      </section>
+      <!-- /.activities -->
     </main>
+    <!-- /.main -->
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        
+        <div class="footer__top">
+          <a href="index.html" class="footer__logo">
+            <img src="img/svg/footer-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <h4 class="footer__nav-title">ALL CATEGORIES</h4>
+              <ul>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+              </ul>
+            </div>
+            <!-- /.footer-nav-item -->
+            <div class="footer__nav-item">
+              <h4 class="footer__nav-title">ADDITIONAL INFORMATION</h4>
+              <ul>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+              </ul>
+              <div class="footer__social">
+                <h4 class="footer__nav-title">Social Network</h4>
+                <div class="footer__social-box">
+                  <a class="footer__social-link" href="#"><img src="/img/svg/fb.svg" alt="Facebook"></a>
+                  <a class="footer__social-link" href="#"><img src="/img/svg/yt.svg" alt="Youtube"></a>
+                  <a class="footer__social-link" href="#"><img src="/img/svg/inst.svg" alt="Instagram"></a>
+                </div>
+              </div>
+            </div>
+            <!-- /.footer-nav-item -->
+            <div class="footer__nav-item">
+              <h4 class="footer__nav-title">LEGAL INFORMATION</h4>
+              <ul>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+                <li><a class="footer__nav-link" href="#">All Deals</a></li>
+              </ul>
+            </div>
+            <!-- /.footer-nav-item -->
+          </nav>
+          <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-top -->
+
+        <div class="footer__middle">
+
+        </div>
+        <!-- /.footer-middle -->
+
+        <div class="footer__bottom"></div>
+        <!-- /.footer-bottom -->
       </div>
       <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
+
   </body>
 </html>
