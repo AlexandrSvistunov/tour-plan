@@ -1,53 +1,4 @@
 // _base.sass
- /******** Fonts **********/
-  @font-face
-  font-family: "Mulish"
-  src: local("Mulish"),url("../fonts/Mulish-Regular.woff2") format("woff2"),url("../fonts/Mulish-Regular.woff") format("woff")  
-  font-weight: 400
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Mulish"
-  src: local("Mulish"), url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff")
-  font-weight: 700
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Mulish"
-  src: local("Mulish"), url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff")
-  font-weight: 600
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Mulish"
-  src: local("Mulish"), url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff")
-  font-weight: 300
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Nunito"
-  src: local("Nunito"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff")
-  font-weight: 400
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Nunito"
-  src: local("Nunito"), url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff")
-  font-weight: 600
-  font-style: normal
-  font-display: swap
-
-@font-face 
-  font-family: "Nunito"
-  src: local("Nunito"), url("../fonts/Nunito-ExtraBold.woff2") format("woff2"), url("../fonts/Nunito-ExtraBold.woff") format("woff")
-  font-weight: 800
-  font-style: normal
-  font-display: swap
 
 /******** Base styles **********/
 
@@ -68,12 +19,14 @@ html
   scroll-behavior: smooth
 
 body 
-  font-family: sans-serif
+  font-family: "Mulish", sans-serif
+  color: $primary-color
   background-color: #F5FAFE
-
+  
 a 
   display: block
   text-decoration: none
+  color: inherit
 
 h1,h2,h3,h4,h5 
   margin: 0
@@ -84,13 +37,20 @@ ul, li
   list-style-type: none
 
 img 
-  /* width: 100%; */
+  width: 100%
   object-fit: cover
   vertical-align: bottom
 
 
 input 
   display: block
+  border: none
 
+button
+  border: none
+  background-color: transparent
 
-.container 
+.container
+  max-width: 1110px
+  margin: auto
+  display: flex
