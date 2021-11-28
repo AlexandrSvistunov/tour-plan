@@ -1,0 +1,70 @@
+/********** Hotel-main ***********/
+.hotel__main
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.hotel-img
+  max-width: 728px
+
+.booking
+  flex-basis: 350px
+  font-family: $font-nunito
+  
+.booking__card
+  background-color: #0A223D
+  color: #ffffff
+  border-radius: 8px
+  padding: 28px
+  padding-top: 24px
+  margin-bottom: 25px
+
+  img
+    width: 14px
+    height: 14px
+
+.booking-info
+  display: flex
+  justify-content: space-between
+  margin-bottom: 8px
+
+.booking-info__left
+  flex-basis: 120px
+  font-size: 10px
+  line-height: 22px
+
+  span
+    display: block
+
+    &:last-child
+      font-size: 12px
+
+  .booking__price
+    font-size: 24px
+
+.booking-info__right
+  flex-basis: 80px
+  font-size: 12px
+  padding-top: 9px
+
+  p
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+.booking__quick
+  display: flex
+  justify-content: space-between
+  margin-bottom: 21px
+  font-size: 18px
+
+  img
+    margin-right: 2px
+
+.booking__button
+  width: 100%
+  +button
+  font-size: 14px
+  padding: 13px 0
+
+.booking__map
