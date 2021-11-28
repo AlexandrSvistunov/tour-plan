@@ -202,6 +202,22 @@ button {
   margin-right: -2%;
 }
 
+/********** Main ***********/
+main {
+  padding-top: 20px;
+}
+
+/********** Bread-crumbs ***********/
+.bread-crumbs {
+  display: flex;
+  font-size: 10px;
+  color: #0A223D;
+}
+
+.bread-crumbs__item {
+  margin-right: 2px;
+}
+
 /****************Footer***************/
 /*******Modals************/
 /******* Media **********//*# sourceMappingURL=style.css.map */
