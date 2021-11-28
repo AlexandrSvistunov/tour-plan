@@ -18,8 +18,7 @@
 .search
   display: flex
   position: relative
-  margin-right: auto
-
+ 
   &__input
     width: 350px
     height: 40px
@@ -50,6 +49,8 @@
     img
       width: 16px
 
+.search--header
+    margin-right: auto 
  
 .user
   width: 107px
@@ -71,14 +72,17 @@
 .header-nav
   background-color: #0A223D
   color: #ffffff
-  padding: 33px 0
+  padding: 1.8% 0
+  font-weight: 700
   font-size: 14px
+  line-height: 2
   text-transform: uppercase
-  font-weight: bold
-
-  .container
-    display: flex
-    justify-content: space-between
   
   &__item
-    font-weight: 700
+    margin-right: 2%  
+
+.header-nav__flex-box
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-right: -2%
