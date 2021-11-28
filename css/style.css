@@ -49,19 +49,20 @@
   font-display: swap;
 }
 /******** Base styles **********/
- *
- * .visually-hidden:not(:focus):not(:active) 
- * position: absolute
- * width: 1px
- * height: 1px
- * margin: -1px
- * border: 0
- * padding: 0
- * white-space: nowrap
- * -webkit-clip-path: inset(100%)
- * clip-path: inset(100%)
- * clip: rect(0 0 0 0)
- * overflow: hidden */
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -216,6 +217,151 @@ main {
 
 .bread-crumbs__item {
   margin-right: 2px;
+}
+
+/**********Section Hotel ***********/
+.hotel {
+  padding-top: 43px;
+}
+
+/********** Hotel-header ***********/
+.hotel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hotel__header-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.hotel__header-title h2 {
+  margin-right: 14px;
+}
+
+.flash-offer {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 20px;
+  padding: 3px 10px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.hotel__header-benefits {
+  font-size: 12px;
+}
+
+.hotel__header-raiting {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 5px 7px;
+  text-align: center;
+}
+.hotel__header-raiting p {
+  font-size: 8px;
+  line-height: 16px;
+}
+.hotel__header-raiting span {
+  font-size: 14px;
+}
+.hotel__header-raiting span:last-child {
+  font-size: 10px;
+}
+
+/********** Stars ***********/
+.stars {
+  line-height: 0;
+  margin-bottom: 5px;
+}
+
+.stars__img {
+  width: 8px;
+  margin-right: -2px;
+}
+
+/********** Hotel-main ***********/
+.hotel__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-img {
+  max-width: 728px;
+}
+
+.booking {
+  flex-basis: 350px;
+  font-family: "Nunito", sans-serif;
+}
+
+.booking__card {
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 28px;
+  padding-top: 24px;
+  margin-bottom: 25px;
+}
+.booking__card img {
+  width: 14px;
+  height: 14px;
+}
+
+.booking-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.booking-info__left {
+  flex-basis: 120px;
+  font-size: 10px;
+  line-height: 22px;
+}
+.booking-info__left span {
+  display: block;
+}
+.booking-info__left span:last-child {
+  font-size: 12px;
+}
+.booking-info__left .booking__price {
+  font-size: 24px;
+}
+
+.booking-info__right {
+  flex-basis: 80px;
+  font-size: 12px;
+  padding-top: 9px;
+}
+.booking-info__right p {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__quick {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  font-size: 18px;
+}
+.booking__quick img {
+  margin-right: 2px;
+}
+
+.booking__button {
+  width: 100%;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 13px 0;
 }
 
 /****************Footer***************/
