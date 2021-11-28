@@ -7,12 +7,13 @@
     padding-bottom: 40px
 
     .container
+      display: flex
       align-items: center
       justify-content: space-between
 
   &__logo 
     width: 177px
-    margin-right: 108px
+    margin-right: 9.7%
 
 .search
   display: flex
@@ -23,18 +24,19 @@
     width: 350px
     height: 40px
     font-weight: 400
-    background-color: #F5FAFE
+    background-color: $background-color
     border-radius: 6px
     padding-left: 24px
+    padding-right: 75px
 
     &::-moz-placeholder
       font-size: 12px
-      color:#333333
+      color:$primary-color
   
   &__input
     &::-webkit-input-placeholder
       font-size: 12px
-      color:#333333
+      color:$primary-color
  
   &__button
     position: absolute
@@ -75,7 +77,8 @@
   font-weight: bold
 
   .container
+    display: flex
     justify-content: space-between
   
-  &__item 
+  &__item
     font-weight: 700

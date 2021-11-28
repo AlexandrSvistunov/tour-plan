@@ -109,7 +109,6 @@ button {
 .container {
   max-width: 1110px;
   margin: auto;
-  display: flex;
 }
 
 /********** Header ***********/
@@ -119,12 +118,13 @@ button {
   padding-bottom: 40px;
 }
 .header__top .container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header__logo {
   width: 177px;
-  margin-right: 108px;
+  margin-right: 9.7%;
 }
 
 .search {
@@ -139,6 +139,7 @@ button {
   background-color: #F5FAFE;
   border-radius: 6px;
   padding-left: 24px;
+  padding-right: 75px;
 }
 .search__input::-moz-placeholder {
   font-size: 12px;
@@ -188,6 +189,7 @@ button {
   font-weight: bold;
 }
 .header-nav .container {
+  display: flex;
   justify-content: space-between;
 }
 .header-nav__item {
