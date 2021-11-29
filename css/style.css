@@ -222,6 +222,7 @@ main {
 /**********Section Hotel ***********/
 .hotel {
   padding-top: 43px;
+  margin-bottom: 70px;
 }
 
 /********** Hotel-header ***********/
@@ -362,6 +363,53 @@ main {
   border-radius: 4px;
   font-size: 14px;
   padding: 13px 0;
+}
+
+/********** Subscribe *********** */
+.subscribe {
+  background-image: url(../img/subscribe-bg-img.jpg);
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.subscribe__wrapper {
+  margin: auto;
+  max-width: 731px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  font-weight: 300;
+}
+.subscribe__title span {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.email-input {
+  background-color: #ffffff;
+  height: 55px;
+  padding-left: 33px;
+}
+.email-input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.email-input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.send-button {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /****************Footer***************/
