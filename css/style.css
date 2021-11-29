@@ -583,5 +583,57 @@ main {
 }
 
 /****************Footer***************/
+.footer {
+  background-color: #0A223D;
+  color: #ffffff;
+  padding-top: 108px;
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 13.8%;
+  height: 13vw;
+  padding-top: 30px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 820px;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.footer__nav-item:first-child {
+  flex-basis: 286px;
+}
+.footer__nav-item:nth-child(2) {
+  margin-right: auto;
+}
+.footer__nav-item ul {
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer-title--nav {
+  margin-bottom: 17px;
+}
+
+.footer__aditional-information {
+  margin-bottom: 23px;
+}
+
 /*******Modals************/
 /******* Media **********//*# sourceMappingURL=style.css.map */
