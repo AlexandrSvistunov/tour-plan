@@ -1,0 +1,90 @@
+/*******Reviews************/
+.reviews
+  text-align: center
+  padding-top: 42px
+  padding-bottom: 128px
+
+.reviews__tile
+  font-weight: 700
+  font-size: 36px
+  text-transform: uppercase
+  margin-bottom: 72px
+
+.reviews__guest
+  width: 97px
+  margin: auto
+  position: relative
+  z-index: 99
+
+.reviews__gallery
+  position: relative
+  &::before,&::after
+    position: absolute
+    content: ""
+    background-size: cover
+    height: 30px
+    width: 30px
+    cursor: pointer
+    top: 41%
+
+  &::before
+    background-image: url(../img/svg/chevron-left.svg)
+    left: 17px
+    
+  &::after
+    background-image: url(../img/svg/chevron-right.svg)
+    right: 17px
+        
+.reviews__img-box
+  width: 90px
+  margin: auto
+  margin-bottom: 10px
+
+  img
+    border-radius: 50%
+    height: 90px
+
+.reviews__guest-info
+  span
+    display: block
+
+.guest-name
+  font-weight: 700
+  font-size: 12px
+  color: #EC1F46
+  margin-bottom: 10px
+
+.time-stay
+  font-size: 10px
+  color: #000000
+  margin-bottom: 5px
+
+.reviews__guest-text
+  position: relative
+  font-size: 12px
+  line-height: 160%
+  background-color: #ffffff
+  max-width: 66%
+  margin: auto
+  margin-top: -108px
+  padding: 136px 98px 30px
+  border-radius: 8px
+  p
+    text-align: justify
+  
+  &::before,&::after
+    position: absolute
+    content: ""
+    background-size: cover
+    width: 70px
+    height: 47px
+        
+  &::before
+    background-image: url(../img/svg/quote-left.svg)
+    top: 13px
+    left: 64px  
+
+  &::after
+    background-image: url(../img/svg/quote-right.svg)
+    top: 120px
+    right: 60px
