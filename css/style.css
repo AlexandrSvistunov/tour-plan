@@ -246,6 +246,7 @@ main {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
   height: 20px;
   padding: 3px 10px;
   font-size: 10px;
@@ -260,6 +261,7 @@ main {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
   padding: 5px 7px;
   text-align: center;
 }
@@ -373,6 +375,7 @@ main {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
   font-size: 14px;
   padding: 13px 0;
 }
@@ -597,11 +600,11 @@ main {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 12px;
   padding: 8px 21px;
-  cursor: pointer;
   bottom: 23px;
   left: 26px;
 }
@@ -617,6 +620,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 95px;
 }
 
 .footer__logo {
@@ -657,6 +661,103 @@ main {
 
 .footer__aditional-information {
   margin-bottom: 23px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social h4 {
+  margin-right: 43px;
+}
+
+.footer__social-box {
+  display: flex;
+  min-width: 85px;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  width: 22px;
+}
+
+.footer__middle {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__form {
+  width: 48.6%;
+}
+
+.footer-title--form {
+  margin-bottom: 37px;
+}
+
+.send-message {
+  width: 100%;
+}
+.send-message fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+.send-message .send-message__contacts {
+  margin-bottom: 13px;
+}
+
+.send-message__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.send-message__input {
+  border-radius: 4px;
+  padding: 15px 23px;
+  min-width: 255px;
+}
+.send-message__input::-moz-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.send-message__input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.send-message__text {
+  border-radius: 4px;
+  width: 100%;
+  min-height: 123px;
+  padding: 18px 20px;
+  resize: none;
+  margin-bottom: 24px;
+}
+.send-message__text::-moz-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.send-message__text::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.send-message__send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.send-message__send .button-submit {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 18px 65px;
 }
 
 /*******Modals************/
