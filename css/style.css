@@ -687,6 +687,40 @@ main {
   flex-wrap: wrap;
 }
 
+.contacts {
+  padding-top: 13px;
+  margin-left: -5px;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #BDBDBD;
+  padding-top: 28px;
+}
+
+.contacts__img-box {
+  width: 24px;
+  margin-right: 16px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 31px;
+}
+
+.contacts__telephone p {
+  margin-bottom: 8px;
+}
+
+.contacts__item {
+  display: flex;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.contacts__item a {
+  display: inline;
+}
+
 .footer__form {
   width: 48.6%;
 }
