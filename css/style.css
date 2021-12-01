@@ -130,9 +130,10 @@ button {
 .search {
   display: flex;
   position: relative;
+  width: 31.6%;
 }
 .search__input {
-  width: 350px;
+  width: 100%;
   height: 40px;
   font-weight: 400;
   background-color: #F5FAFE;
@@ -383,7 +384,6 @@ main {
   padding-top: 100px;
   padding-bottom: 90px;
 }
-
 .subscribe__wrapper {
   margin: auto;
   max-width: 50.7%;
@@ -391,7 +391,6 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-
 .subscribe__title {
   font-size: 24px;
   font-weight: 300;
@@ -411,7 +410,6 @@ main {
   font-size: 14px;
   font-weight: 300;
 }
-
 .email-input::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 300;
@@ -429,42 +427,18 @@ main {
   padding-top: 42px;
   padding-bottom: 128px;
 }
-
 .reviews__tile {
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 72px;
 }
-
 .reviews__guest {
   width: 97px;
   margin: auto;
   position: relative;
   z-index: 99;
 }
-
-.reviews__gallery {
-  position: relative;
-}
-.reviews__gallery::before, .reviews__gallery::after {
-  position: absolute;
-  content: "";
-  background-size: cover;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  top: 41%;
-}
-.reviews__gallery::before {
-  background-image: url(../img/svg/chevron-left.svg);
-  left: 17px;
-}
-.reviews__gallery::after {
-  background-image: url(../img/svg/chevron-right.svg);
-  right: 17px;
-}
-
 .reviews__img-box {
   width: 90px;
   margin: auto;
@@ -474,24 +448,9 @@ main {
   border-radius: 50%;
   height: 90px;
 }
-
 .reviews__guest-info span {
   display: block;
 }
-
-.guest-name {
-  font-weight: 700;
-  font-size: 12px;
-  color: #EC1F46;
-  margin-bottom: 10px;
-}
-
-.time-stay {
-  font-size: 10px;
-  color: #000000;
-  margin-bottom: 5px;
-}
-
 .reviews__guest-text {
   position: relative;
   font-size: 12px;
@@ -523,12 +482,44 @@ main {
   top: 120px;
   right: 60px;
 }
+.reviews__gallery {
+  position: relative;
+}
+.reviews__gallery::before, .reviews__gallery::after {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  top: 41%;
+}
+.reviews__gallery::before {
+  background-image: url(../img/svg/chevron-left.svg);
+  left: 17px;
+}
+.reviews__gallery::after {
+  background-image: url(../img/svg/chevron-right.svg);
+  right: 17px;
+}
+
+.guest-name {
+  font-weight: 700;
+  font-size: 12px;
+  color: #EC1F46;
+  margin-bottom: 10px;
+}
+
+.time-stay {
+  font-size: 10px;
+  color: #000000;
+  margin-bottom: 5px;
+}
 
 /********** Activities ***********/
 .activities {
   padding-bottom: 98px;
 }
-
 .activities__title {
   font-weight: 700;
   font-size: 24px;
@@ -536,14 +527,44 @@ main {
   color: #000000;
   margin-bottom: 60px;
 }
-
 .activities__flex-box {
   display: flex;
   flex-wrap: wrap;
   margin-right: -2.7%;
   margin-bottom: -2.6%;
 }
-
+.activities__item--1 {
+  background-image: url(../img/activities-1.jpg);
+}
+.activities__item--1--2 {
+  background-image: url(../img/activities-2.jpg);
+}
+.activities__item--1--3 {
+  background-image: url(../img/activities-3.jpg);
+}
+.activities__item--1--4 {
+  background-image: url(../img/activities-4.jpg);
+}
+.activities__item-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+.activities__item-button {
+  position: absolute;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 21px;
+  bottom: 23px;
+  left: 26px;
+}
 .activities__item {
   position: relative;
   max-width: 22.4%;
@@ -567,66 +588,25 @@ main {
   border-radius: 6px;
 }
 
-.activities__item--1 {
-  background-image: url(../img/activities-1.jpg);
-}
-
-.activities__item--2 {
-  background-image: url(../img/activities-2.jpg);
-}
-
-.activities__item--3 {
-  background-image: url(../img/activities-3.jpg);
-}
-
-.activities__item--4 {
-  background-image: url(../img/activities-4.jpg);
-}
-
-.activities__item-title {
-  position: relative;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 18px;
-}
-
-.activities__item-button {
-  position: absolute;
-  background-color: #EC1F46;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  padding: 8px 21px;
-  bottom: 23px;
-  left: 26px;
-}
-
 /****************Footer***************/
+/********** Footer-top***********/
 .footer {
   background-color: #0A223D;
   color: #ffffff;
   padding-top: 108px;
   padding-bottom: 47px;
 }
-
-/********** Footer-top***********/
 .footer__top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 95px;
 }
-
 .footer__logo {
   width: 13.8%;
   height: 13vw;
   padding-top: 30px;
 }
-
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
@@ -634,7 +614,6 @@ main {
   justify-content: space-between;
   margin-right: 5px;
 }
-
 .footer__nav-item:first-child {
   flex-basis: 286px;
 }
@@ -646,21 +625,17 @@ main {
   line-height: 160%;
   color: #BDBDBD;
 }
-
 .footer-title {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
-
 .footer-title--nav {
   margin-bottom: 17px;
 }
-
 .footer__aditional-information {
   margin-bottom: 23px;
 }
-
 .footer__social {
   display: flex;
   align-items: center;
@@ -668,14 +643,12 @@ main {
 .footer__social h4 {
   margin-right: 43px;
 }
-
 .footer__social-box {
   display: flex;
   min-width: 85px;
   justify-content: space-between;
 }
-
-.footer__social-link {
+.footer__social-box-link {
   width: 22px;
 }
 
@@ -691,27 +664,22 @@ main {
   padding-top: 13px;
   margin-left: -5px;
 }
-
 .contacts__text {
   font-size: 14px;
   line-height: 14px;
   color: #BDBDBD;
   padding-top: 28px;
 }
-
 .contacts__img-box {
   width: 24px;
   margin-right: 16px;
 }
-
 .contacts__subtitle {
   margin-bottom: 31px;
 }
-
 .contacts__telephone p {
   margin-bottom: 8px;
 }
-
 .contacts__item {
   display: flex;
   margin-left: 5px;
@@ -741,12 +709,10 @@ main {
 .send-message .send-message__contacts {
   margin-bottom: 13px;
 }
-
 .send-message__contacts {
   display: flex;
   justify-content: space-between;
 }
-
 .send-message__input {
   border-radius: 4px;
   padding: 15px 23px;
@@ -760,7 +726,6 @@ main {
   font-size: 12px;
   color: #BDBDBD;
 }
-
 .send-message__text {
   border-radius: 4px;
   width: 100%;
@@ -777,7 +742,6 @@ main {
   font-size: 12px;
   color: #BDBDBD;
 }
-
 .send-message__send {
   display: flex;
   justify-content: space-between;
@@ -804,17 +768,14 @@ main {
   max-width: 698px;
   margin-left: auto;
 }
-
 .footer__bottom-links {
   display: flex;
   margin-right: -11px;
   line-height: 29px;
 }
-
 .footer__bottom-link {
   margin-right: 13px;
 }
-
 .footer__bottom-payment {
   width: 136px;
   height: 22px;
