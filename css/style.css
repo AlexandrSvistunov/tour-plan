@@ -195,7 +195,6 @@ button {
 .header-nav__item {
   margin-right: 2%;
 }
-
 .header-nav__flex-box {
   display: flex;
   justify-content: space-between;
@@ -232,31 +231,17 @@ main {
   align-items: center;
   margin-bottom: 20px;
 }
-
 .hotel__header-title {
   display: flex;
   align-items: center;
   margin-bottom: 2px;
 }
-.hotel__header-title h2 {
+.hotel__header h2 {
   margin-right: 14px;
 }
-
-.flash-offer {
-  background-color: #EC1F46;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  height: 20px;
-  padding: 3px 10px;
-  font-size: 10px;
-  border-radius: 3px;
-}
-
 .hotel__header-benefits {
   font-size: 12px;
 }
-
 .hotel__header-raiting {
   background-color: #EC1F46;
   color: #ffffff;
@@ -274,6 +259,17 @@ main {
 }
 .hotel__header-raiting span:last-child {
   font-size: 10px;
+}
+
+.flash-offer {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 20px;
+  padding: 3px 10px;
+  font-size: 10px;
+  border-radius: 3px;
 }
 
 /********** Stars ***********/
@@ -314,7 +310,6 @@ main {
   flex-basis: 350px;
   font-family: "Nunito", sans-serif;
 }
-
 .booking__card {
   background-color: #0A223D;
   color: #ffffff;
@@ -327,13 +322,38 @@ main {
   width: 14px;
   height: 14px;
 }
-
+.booking__price {
+  font-size: 24px;
+}
+.booking__quick {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  font-size: 18px;
+}
+.booking__quick img {
+  margin-right: 2px;
+}
+.booking__button {
+  width: 100%;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 13px 0;
+}
+.booking__map {
+  background: url(../img/map-1440.jpg);
+  border-radius: 10px;
+  width: 100%;
+  height: 213px;
+}
 .booking-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
-
 .booking-info__left {
   flex-basis: 120px;
   font-size: 10px;
@@ -345,10 +365,6 @@ main {
 .booking-info__left span:last-child {
   font-size: 12px;
 }
-.booking-info__left .booking__price {
-  font-size: 24px;
-}
-
 .booking-info__right {
   flex-basis: 80px;
   font-size: 12px;
@@ -358,26 +374,6 @@ main {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-.booking__quick {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 21px;
-  font-size: 18px;
-}
-.booking__quick img {
-  margin-right: 2px;
-}
-
-.booking__button {
-  width: 100%;
-  background-color: #EC1F46;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 13px 0;
 }
 
 /********** Subscribe *********** */
