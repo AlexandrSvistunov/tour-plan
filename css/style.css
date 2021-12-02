@@ -149,7 +149,6 @@ button {
 .search {
   display: flex;
   position: relative;
-  width: 31.6%;
 }
 .search__input {
   width: 100%;
@@ -180,9 +179,9 @@ button {
 .search__button img {
   width: 16px;
 }
-
 .search--header {
   margin-right: auto;
+  width: 31.6%;
 }
 
 .user {
@@ -409,6 +408,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .subscribe__title {
   font-size: 24px;
@@ -432,6 +432,10 @@ main {
 .email-input::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 300;
+}
+
+.send-form {
+  width: 350px;
 }
 
 .send-button {
@@ -656,6 +660,7 @@ main {
 .footer__social {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer__social h4 {
   margin-right: 43px;
@@ -727,17 +732,16 @@ main {
   border: none;
   width: 100%;
 }
-.send-message .send-message__contacts {
-  margin-bottom: 13px;
-}
 .send-message__contacts {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .send-message__input {
   border-radius: 4px;
   padding: 15px 23px;
   min-width: 255px;
+  margin-bottom: 13px;
 }
 .send-message__input::-moz-placeholder {
   font-size: 12px;
@@ -784,6 +788,7 @@ main {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 12px;
   color: #ffffff;
   max-width: 698px;
@@ -805,16 +810,8 @@ main {
 /*******Modals************/
 /******* Media **********/
 @media (max-width: 1400px) {
-  .hotel-img {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .booking {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
+  .container {
+    max-width: 80%;
   }
 }
 @media (max-width: 1350px) {
@@ -841,12 +838,30 @@ main {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .hotel-img {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .booking {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 992px) {
-  .search {
+  .search--header {
     width: 40%;
   }
 }
 @media (max-width: 768px) {
+  .search--header {
+    width: 48.6%;
+  }
+
   .header__top {
     padding: 30px 0;
   }
@@ -855,10 +870,6 @@ main {
     width: 132px;
     margin-right: 6.7%;
     line-height: 0;
-  }
-
-  .search {
-    width: 48.8%;
   }
 
   .header-nav {
@@ -876,7 +887,7 @@ main {
     height: 255px;
   }
 }
-@media (max-width: 660px) {
+@media (max-width: 765px) {
   .search--header, .user--header, .header-nav {
     display: none;
   }
