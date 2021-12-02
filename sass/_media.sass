@@ -1,11 +1,46 @@
 /******* Media **********/
-@media (max-width: 1400px)
+@media (max-width: 1420px)
   .container
     max-width: 80%
 
-@media (max-width: 1350px)
+  .hotel
+      margin-bottom: 59px
+
+      &-img
+        margin-bottom: 30px
+        margin-left: auto
+        margin-right: auto
+        height: 450px
+        
+        img  
+          height: 100%
+          object-fit: inherit
+  
+  .booking
+    flex-basis: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: -25px
+
+    &__card
+      padding-right: 23px
+      padding-left: 23px
+      margin-right: 5%
+      width: 340px
+      margin-left: auto
+
+    &__map
+      width: 340px
+      height: 210px
+      margin-right: auto  
+
+@media (max-width: 1360px)
   .container
     max-width: 91%
+
+  
+
 
 @media (max-width: 1269px)
   .footer__logo
@@ -26,17 +61,15 @@
   
 
 @media (max-width: 992px)
-  .hotel-img
-    margin-bottom: 30px
-    margin-left: auto
-    margin-right: auto
-  
-  .booking
-    flex-basis: 100%
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
 
+  .booking
+    &__card
+      margin-left: 0
+      margin-right: 2%
+
+    &__map
+      margin-right: 0
+  
   .search--header
     width: 40%
 
@@ -59,10 +92,19 @@
   .header-nav__flex-box
     justify-content: space-evenly
 
+  .hotel
+  
+    &-img
+      height: 58.6vw
+
+
   .activities__item
     width: 339px
     background-position-x: 0
     height: 255px
+
+  
+
 
 @media (max-width: 765px)
   .search--header,.user--header,.header-nav 
