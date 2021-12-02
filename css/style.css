@@ -112,6 +112,9 @@ button {
 }
 
 /********** Header ***********/
+.header__menu-burger {
+  display: none;
+}
 .header__top {
   background-color: #ffffff;
   padding-top: 40px;
@@ -125,6 +128,22 @@ button {
 .header__logo {
   width: 177px;
   margin-right: 9.7%;
+}
+
+.menu-burger {
+  height: 13px;
+  width: 16px;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-burger__line {
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
 }
 
 .search {
@@ -855,5 +874,29 @@ main {
     width: 339px;
     background-position-x: 0;
     height: 255px;
+  }
+}
+@media (max-width: 660px) {
+  .search--header, .user--header, .header-nav {
+    display: none;
+  }
+
+  .header__menu-burger {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
+  .header__top {
+    padding: 28px 0;
+  }
+
+  .container {
+    max-width: 87%;
+  }
+
+  .header__logo {
+    width: 98px;
+    margin-right: 0;
+    padding-bottom: 3px;
   }
 }/*# sourceMappingURL=style.css.map */
