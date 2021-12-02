@@ -312,6 +312,7 @@ main {
 .hotel-img {
   max-width: 728px;
   position: relative;
+  margin-right: 10px;
 }
 .hotel-img::before {
   content: "";
@@ -838,7 +839,7 @@ main {
     display: none;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .hotel-img {
     margin-bottom: 30px;
     margin-left: auto;
@@ -851,8 +852,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-}
-@media (max-width: 992px) {
+
   .search--header {
     width: 40%;
   }
