@@ -899,7 +899,7 @@ main {
 @media (max-width: 992px) {
   .booking__card {
     margin-left: 0;
-    margin-right: 2%;
+    margin-right: 0.5%;
   }
   .booking__map {
     margin-right: 0;
@@ -939,10 +939,10 @@ main {
   }
 
   .booking__card {
-    width: 48.5%;
+    width: 340px;
   }
   .booking__map {
-    width: 48.5%;
+    width: 340px;
   }
 
   .activities__item {
@@ -951,7 +951,7 @@ main {
     height: 255px;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   .search--header, .user--header, .header-nav {
     display: none;
   }
@@ -963,8 +963,7 @@ main {
   .hotel__header-raiting {
     display: none;
   }
-}
-@media (max-width: 700px) {
+
   .booking {
     flex-direction: column;
     align-items: center;
@@ -972,12 +971,20 @@ main {
   }
   .booking__card {
     margin-right: 0;
-    width: 279px;
+    width: 48.5%;
     margin-bottom: 18px;
   }
   .booking__map {
-    width: 279px;
+    width: 48.5%;
     height: 173px;
+  }
+}
+@media (max-width: 650px) {
+  .booking__card {
+    width: 279px;
+  }
+  .booking__map {
+    width: 279px;
   }
 }
 @media (max-width: 400px) {

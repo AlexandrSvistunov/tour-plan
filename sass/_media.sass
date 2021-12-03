@@ -61,7 +61,7 @@
   .booking
     &__card
       margin-left: 0
-      margin-right: 2%
+      margin-right: 0.5%
 
     &__map
       margin-right: 0
@@ -97,10 +97,10 @@
   .booking
     
     &__card
-      width: 48.5%
+      width: 340px
         
     &__map
-      width: 48.5%
+      width: 340px
     
   .activities__item
     width: 339px
@@ -108,7 +108,7 @@
     height: 255px
 
  
-@media (max-width: 765px)
+@media (max-width: 767px)
   .search--header,.user--header,.header-nav 
     display: none
 
@@ -118,22 +118,28 @@
   .hotel__header-raiting
     display: none
 
- 
-@media (max-width: 700px)
   .booking
-    flex-direction: column
-    align-items: center
-    margin-bottom: 0
+      flex-direction: column
+      align-items: center
+      margin-bottom: 0
 
-    &__card
-      margin-right: 0
-      width: 279px
-      margin-bottom: 18px
+      &__card
+        margin-right: 0
+        width: 48.5%
+        margin-bottom: 18px
 
-    &__map
-      width: 279px
-      height: 173px
-
+      &__map
+        width: 48.5%
+        height: 173px
+  
+@media (max-width: 650px)
+  .booking
+      &__card
+        width: 279px
+    
+      &__map
+        width: 279px
+      
 @media (max-width: 400px)
   .hotel
 
