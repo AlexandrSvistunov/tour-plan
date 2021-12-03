@@ -1,9 +1,17 @@
 /********** Bread-crumbs ***********/
 .bread-crumbs
-  display: flex
 
-  font-size: 10px
-  color: #0A223D
+  &__list
+    display: flex
+    font-size: 10px
 
-.bread-crumbs__item
-  margin-right: 2px
+  &__item
+    margin-right: 3px
+    &:hover
+      color: #2917c5
+    &::after
+      content: '/'
+      margin-left: 2px
+
+.active
+  color: $primary-color

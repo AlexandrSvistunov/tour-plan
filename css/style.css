@@ -227,14 +227,23 @@ main {
 }
 
 /********** Bread-crumbs ***********/
-.bread-crumbs {
+.bread-crumbs__list {
   display: flex;
   font-size: 10px;
-  color: #0A223D;
+}
+.bread-crumbs__item {
+  margin-right: 3px;
+}
+.bread-crumbs__item:hover {
+  color: #2917c5;
+}
+.bread-crumbs__item::after {
+  content: "/";
+  margin-left: 2px;
 }
 
-.bread-crumbs__item {
-  margin-right: 2px;
+.active {
+  color: #333333;
 }
 
 /**********Section Hotel ***********/
