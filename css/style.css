@@ -969,23 +969,6 @@ main {
     align-items: center;
     margin-bottom: 0;
   }
-  .booking__card {
-    margin-right: 0;
-    width: 48.5%;
-    margin-bottom: 18px;
-  }
-  .booking__map {
-    width: 48.5%;
-    height: 173px;
-  }
-}
-@media (max-width: 650px) {
-  .booking__card {
-    width: 279px;
-  }
-  .booking__map {
-    width: 279px;
-  }
 }
 @media (max-width: 400px) {
   .hotel__header-wrapper {
@@ -1004,6 +987,13 @@ main {
     width: auto;
     margin-bottom: 0;
     margin-right: 17px;
+  }
+
+  .booking__card {
+    width: 100%;
+  }
+  .booking__map {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -1032,17 +1022,5 @@ main {
     width: 100%;
     height: 56vw;
     margin-bottom: 20px;
-  }
-
-  .booking {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  .booking__card {
-    width: 100%;
-  }
-  .booking__map {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
