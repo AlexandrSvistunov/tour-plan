@@ -1,20 +1,22 @@
 /********** Hotel-header ***********/
+.hotel__header-wrapper
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  
 .hotel__header
   display: flex
-  justify-content: space-between
   align-items: center
-  margin-bottom: 20px
-
-  &-title
-    display: flex
-    align-items: center
-    margin-bottom: 2px
+  justify-content: space-between
+  margin-bottom: 21px
 
   h2
     margin-right: 14px
+    text-transform: uppercase
 
   &-benefits
     font-size: 12px
+    line-height: 15px
    
   &-raiting
     +button
@@ -33,7 +35,7 @@
 
 .flash-offer
   +button
-  height: 20px
-  padding: 3px 10px
+  padding: 4px 10px
   font-size: 10px
+  line-height: 13px
   border-radius: 3px
