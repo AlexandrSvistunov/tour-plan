@@ -581,6 +581,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -2.6%;
+  margin-right: -1%;
 }
 .activities__item--1 {
   background-image: url(../img/activities-1.jpg);
@@ -620,6 +621,7 @@ main {
   border-radius: 6px;
   color: #ffffff;
   margin-bottom: 2.6%;
+  margin-right: 1%;
   padding: 143px 26px 53px;
   background-size: cover;
   background-position-x: -42px;
