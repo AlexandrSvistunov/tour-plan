@@ -85,8 +85,6 @@
     &__gallery::after
       right: 0
       top: 45.5%
-      
-      
 
     &__tile
       font-size: 30px
@@ -96,6 +94,10 @@
       max-width: 83%
       padding-right: 62px
       padding-left: 62px
+
+      &::before,&::after
+        display: none
+ 
 
 @media (max-width: 768px)
   .search--header
@@ -208,7 +210,45 @@
       font-size: 30px
 
   .email-input
-    padding-left: 19px 
+    padding-left: 19px
+
+  .reviews
+    padding-bottom: 95px
+    
+    &__tile
+      font-size: 18px
+      max-width: 245px
+      margin-right: auto
+      margin-left: auto
+      margin-bottom: 44px
+
+    &__guest
+
+      .stars
+        margin-right: 0
+
+    &__gallery::before,&__gallery::after
+      top: 6%
+      z-index: 99
+
+    &__gallery::before
+      left: 32px
+      
+    &__gallery::after
+      right: 32px
+
+    &__guest-text
+      max-width: 100%
+      padding: 140px 30px 30px
+      margin-top: -108px
+
+      p
+        text-align: left
+
+  .activities
+
+    &__title
+      font-size: 18px
 
 @media (max-width: 320px)
   .header__top 
