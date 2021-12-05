@@ -425,14 +425,6 @@ main {
   padding-top: 100px;
   padding-bottom: 90px;
 }
-.subscribe__wrapper {
-  margin: auto;
-  max-width: 50.7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .subscribe__title {
   font-size: 24px;
   font-weight: 300;
@@ -441,6 +433,14 @@ main {
   font-size: 36px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.container--subscribe {
+  padding: 0 13.1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .email-input {
@@ -909,6 +909,13 @@ main {
     width: 40%;
   }
 }
+.subscribe {
+  padding: 95px 0;
+}
+.subscribe .container--subscribe {
+  padding: 0;
+}
+
 @media (max-width: 768px) {
   .search--header {
     width: 48.6%;
