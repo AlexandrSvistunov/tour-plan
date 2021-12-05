@@ -420,14 +420,17 @@ main {
 
 /********** Subscribe *********** */
 .subscribe {
-  background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img.jpg);
+  background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-1440.jpg);
   color: #ffffff;
   padding-top: 100px;
   padding-bottom: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .subscribe__title {
   font-size: 24px;
   font-weight: 300;
+  margin-right: 10px;
 }
 .subscribe__title span {
   font-size: 36px;
@@ -957,6 +960,12 @@ main {
     background-position-x: 0;
     height: 255px;
   }
+
+  .subscribe {
+    background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 @media (max-width: 767px) {
   .search--header, .user--header, .header-nav {
@@ -975,6 +984,11 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 650px) {
+  .subscribe__title {
+    margin-bottom: 37px;
   }
 }
 @media (max-width: 400px) {
@@ -998,9 +1012,32 @@ main {
 
   .booking__card {
     width: 100%;
+    margin-bottom: 19px;
   }
   .booking__map {
     width: 100%;
+    height: 173px;
+  }
+
+  .subscribe {
+    background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-320.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 72px;
+    padding-bottom: 83px;
+  }
+  .subscribe__title {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 37px;
+    margin-right: 0;
+  }
+  .subscribe span {
+    font-size: 30px;
+  }
+
+  .email-input {
+    padding-left: 19px;
   }
 }
 @media (max-width: 320px) {
