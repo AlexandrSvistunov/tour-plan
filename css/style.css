@@ -324,12 +324,37 @@ main {
   justify-content: space-between;
 }
 
-.hotel-img {
+.hotel__img {
   max-width: 728px;
-  position: relative;
   margin-right: 10px;
+  position: relative;
 }
-.hotel-img::before {
+.hotel__img::before, .hotel__img::after {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  width: 10px;
+  height: 17.5px;
+  top: 48.5%;
+  z-index: 99;
+  cursor: pointer;
+}
+.hotel__img::before {
+  background-image: url(../img/svg/arrow-left.svg);
+  left: 28px;
+}
+.hotel__img::after {
+  background-image: url(../img/svg/arrow-right.svg);
+  right: 28px;
+}
+.hotel__img img {
+  border-radius: 8px;
+}
+
+.hotel__img-bg {
+  position: relative;
+}
+.hotel__img-bg::before {
   content: "";
   display: block;
   width: 100%;
@@ -339,9 +364,7 @@ main {
   left: 0;
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   border-radius: 8px;
-}
-.hotel-img img {
-  border-radius: 8px;
+  z-index: 0;
 }
 
 .booking {

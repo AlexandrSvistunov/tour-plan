@@ -4,11 +4,35 @@
   flex-wrap: wrap
   justify-content: space-between
 
-.hotel-img
+.hotel__img
   max-width: 728px
-  position: relative
   margin-right: 10px
-  
+  position: relative
+
+  &::before,&::after
+    position: absolute
+    content: ""
+    background-size: cover
+    width: 10px
+    height: 17.5px
+    top: 48.5%
+    z-index: 99
+    cursor: pointer
+          
+  &::before
+    background-image: url(../img/svg/arrow-left.svg)
+    left: 28px
+
+  &::after
+    background-image: url(../img/svg/arrow-right.svg)
+    right: 28px
+
+  img
+    border-radius: 8px
+
+.hotel__img-bg
+  position: relative
+    
   &::before
     content: ''
     display: block
@@ -19,9 +43,7 @@
     left: 0
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     border-radius: 8px
-
-  img
-    border-radius: 8px
+    z-index: 0  
 
 .booking
   flex-basis: 350px
