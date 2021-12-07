@@ -4,46 +4,46 @@
   flex-wrap: wrap
   justify-content: space-between
 
-.hotel__img
-  max-width: 728px
-  margin-right: 10px
-  position: relative
+// .hotel__img
+//   max-width: 728px
+//   margin-right: 10px
+//   position: relative
 
-  &::before,&::after
-    position: absolute
-    content: ""
-    background-size: cover
-    width: 10px
-    height: 17.5px
-    top: 48.5%
-    z-index: 99
-    cursor: pointer
+//   &::before,&::after
+//     position: absolute
+//     content: ""
+//     background-size: cover
+//     width: 10px
+//     height: 17.5px
+//     top: 48.5%
+//     z-index: 99
+//     cursor: pointer
           
-  &::before
-    background-image: url(../img/svg/arrow-left.svg)
-    left: 28px
+//   &::before
+//     background-image: url(../img/svg/arrow-left.svg)
+//     left: 28px
 
-  &::after
-    background-image: url(../img/svg/arrow-right.svg)
-    right: 28px
+//   &::after
+//     background-image: url(../img/svg/arrow-right.svg)
+//     right: 28px
 
-  img
-    border-radius: 8px
+//   img
+//     border-radius: 8px
 
-.hotel__img-bg
-  position: relative
+// .hotel__img-bg
+//   position: relative
     
-  &::before
-    content: ''
-    display: block
-    width: 100%
-    height: 100%
-    position: absolute
-    top: 0
-    left: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    border-radius: 8px
-    z-index: 0  
+//   &::before
+//     content: ''
+//     display: block
+//     width: 100%
+//     height: 100%
+//     position: absolute
+//     top: 0
+//     left: 0
+//     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+//     border-radius: 8px
+//     z-index: 0  
 
 .booking
   flex-basis: 350px
@@ -114,3 +114,46 @@
         margin-bottom: 10px
         display: flex
         justify-content: space-between
+
+/********** Swiper slider ***********/
+
+.swiper 
+  max-width: 728px
+  height: 450px
+  margin: 0
+  margin-right: 10px
+  border-radius: 8px
+  position: relative
+
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    border-radius: 8px
+    z-index: 10
+
+  
+  &-button
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    width: 30px
+    height: 30px
+    z-index: 99
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    
+    &--next
+      right: 18px
+      background-image: url(../img/svg/arrow-right.svg)
+
+    &--prev
+      left: 18px
+      background-image: url(../img/svg/arrow-left.svg)
