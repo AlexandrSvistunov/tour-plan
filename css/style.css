@@ -599,7 +599,7 @@ main {
   font-size: 24px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 .activities__flex-box {
   display: flex;
@@ -625,7 +625,6 @@ main {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 18px;
 }
 .activities__item-button {
   position: absolute;
@@ -647,7 +646,7 @@ main {
   color: #ffffff;
   margin-bottom: 2.6%;
   margin-right: 1%;
-  padding: 143px 26px 53px;
+  padding: 143px 26px 71px;
   background-size: cover;
   background-position-x: -42px;
 }
@@ -920,6 +919,17 @@ main {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .activities__flex-box {
+    justify-content: space-around;
+  }
+  .activities__item {
+    width: 339px;
+    background-position-x: 0;
+    margin-right: 3%;
+    padding-right: 110px;
+  }
+}
 @media (max-width: 992px) {
   .booking__card {
     margin-left: 0;
@@ -927,6 +937,13 @@ main {
   }
   .booking__map {
     margin-right: 0;
+  }
+
+  .activities__flex-box {
+    justify-content: space-between;
+  }
+  .activities__item {
+    margin-right: 1%;
   }
 
   .search--header {
@@ -1001,16 +1018,14 @@ main {
     width: 340px;
   }
 
-  .activities__item {
-    width: 339px;
-    background-position-x: 0;
-    height: 255px;
-  }
-
   .subscribe {
     background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .activities {
+    padding-bottom: 70px;
   }
 }
 @media (max-width: 767px) {

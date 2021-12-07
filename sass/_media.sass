@@ -52,6 +52,19 @@
     display: none
 
 
+@media (max-width: 1200px)
+
+  .activities
+
+    &__flex-box
+      justify-content: space-around
+
+    &__item
+      width: 339px
+      background-position-x: 0
+      margin-right: 3%
+      padding-right: 110px 
+
 @media (max-width: 992px)
 
   .booking
@@ -61,6 +74,13 @@
 
     &__map
       margin-right: 0
+
+  .activities
+    &__flex-box
+      justify-content: space-between
+
+    &__item
+      margin-right: 1%
   
   .search--header
     width: 40%
@@ -115,7 +135,7 @@
     justify-content: space-evenly
 
   .hotel
-    
+
     .swiper
       height: 58.6vw
       margin-bottom: 30px
@@ -128,15 +148,15 @@
     &__map
       width: 340px
     
-  .activities__item
-    width: 339px
-    background-position-x: 0
-    height: 255px
-
+  
   .subscribe
     background: linear-gradient(rgba(10, 34, 61, 0.8),rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-768.jpg)
     background-size: cover
-    background-repeat: no-repeat  
+    background-repeat: no-repeat
+
+
+  .activities
+    padding-bottom: 70px
 
  
 @media (max-width: 767px)
