@@ -370,6 +370,7 @@ main {
   border-radius: 10px;
   width: 347px;
   height: 213px;
+  overflow: hidden;
 }
 .booking-info {
   display: flex;
