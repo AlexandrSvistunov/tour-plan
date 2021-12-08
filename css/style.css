@@ -410,7 +410,7 @@ main {
 .hotel .swiper img {
   height: 100%;
 }
-.hotel .swiper::before {
+.hotel .swiper-slide::before {
   content: "";
   display: block;
   width: 100%;
@@ -860,6 +860,10 @@ main {
 }
 
 /*******Modals************/
+.booking-modal {
+  display: none;
+}
+
 /******* Media **********/
 @media (max-width: 1430px) {
   .container {
