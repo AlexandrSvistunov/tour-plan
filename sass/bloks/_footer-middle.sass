@@ -8,6 +8,7 @@
 .contacts
   padding-top: 13px
   margin-left: -5px
+  margin-right: 10px
 
   &__text
     font-size: 14px
@@ -35,29 +36,34 @@
       display: inline
 
 .footer__form
-  width: 539px
+  flex-basis: 539px
 
 .footer-title--form
-  margin-bottom: 37px
+  margin-bottom: 36px
  
 .send-message
   width: 100%
+
   fieldset
     padding: 0
     margin: 0
     border: none
     width: 100%
 
+    &::last-child
+      margin-right: 0
+
+
   &__contacts
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
-    
+        
   &__input
     border-radius: 4px
     padding: 15px 23px
     min-width: 255px
     margin-bottom: 13px
+    margin-right: 5.3%
   
     &::-moz-placeholder
       +form-style
