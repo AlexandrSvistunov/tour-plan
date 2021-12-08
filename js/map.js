@@ -29,7 +29,7 @@
             // Хинт показывается при наведении мышкой на иконку метки.
             hintContent: 'Hampton by Hilton Moscow',
             // Балун откроется при клике по метке.
-            balloonContent: 'Bldg. 10, Rogozhski Val st., Moscow'
+            balloonContent: 'Hampton by Hilton Moscow, '
         });
  
         // После того как метка была создана, добавляем её на карту.
