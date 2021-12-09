@@ -320,7 +320,6 @@ main {
 /********** Hotel-main ***********/
 .hotel__main {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -334,23 +333,27 @@ main {
   border-radius: 8px;
   padding: 28px;
   padding-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 7.5%;
 }
 .booking__card img {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 12px;
 }
 .booking__price {
   font-size: 24px;
+  font-weight: 800;
 }
 .booking__quick {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
+.booking__quick span, .booking__quick a {
+  font-weight: 600;
+}
 .booking__quick img {
-  margin-right: 7px;
+  margin-right: 9px;
 }
 .booking__quick p {
   display: flex;
@@ -404,7 +407,7 @@ main {
   max-width: 728px;
   height: 450px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 30px;
   border-radius: 8px;
   position: relative;
 }
@@ -870,43 +873,18 @@ main {
 }
 
 /******* Media **********/
+@media (max-width: 1600px) {
+  .hotel .swiper {
+    max-width: 850px;
+  }
+}
 @media (max-width: 1430px) {
   .container {
     max-width: 80%;
   }
 
-  .hotel {
-    margin-bottom: 59px;
-  }
   .hotel .swiper {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .booking {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: -25px;
-  }
-  .booking__card {
-    padding-right: 23px;
-    padding-left: 23px;
-    margin-right: 5%;
-    width: 340px;
-    margin-left: auto;
-  }
-  .booking__map {
-    width: 340px;
-    height: 210px;
-    margin-right: auto;
-  }
-}
-@media (max-width: 1360px) {
-  .container {
-    max-width: 91%;
+    margin-right: 20px;
   }
 }
 @media (max-width: 1269px) {
@@ -930,6 +908,32 @@ main {
   }
 }
 @media (max-width: 1200px) {
+  .hotel__main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hotel .swiper {
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .booking {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .booking__card, .booking__map {
+    width: 400px;
+  }
+  .booking__card {
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
   .activities__flex-box {
     justify-content: space-around;
   }
@@ -940,15 +944,21 @@ main {
     padding-right: 110px;
   }
 }
-@media (max-width: 992px) {
-  .booking__card {
-    margin-left: 0;
-    margin-right: 0.5%;
-  }
-  .booking__map {
-    margin-right: 0;
+@media (max-width: 1030px) {
+  .hotel .swiper {
+    max-width: 100%;
   }
 
+  .booking {
+    width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    max-width: 91%;
+  }
+}
+@media (max-width: 992px) {
   .activities__flex-box {
     justify-content: space-between;
   }
@@ -1016,6 +1026,9 @@ main {
     justify-content: space-evenly;
   }
 
+  .hotel {
+    margin-bottom: 57px;
+  }
   .hotel .swiper {
     height: 58.6vw;
     margin-bottom: 30px;
@@ -1087,12 +1100,6 @@ main {
   .hotel__header-raiting {
     display: none;
   }
-
-  .booking {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-  }
 }
 @media (max-width: 760px) {
   .activities__flex-box {
@@ -1102,6 +1109,24 @@ main {
   }
 }
 @media (max-width: 650px) {
+  .container {
+    max-width: 87%;
+  }
+
+  .booking {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+  }
+  .booking__card {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .booking__map {
+    width: 100%;
+  }
+
   .subscribe__title {
     margin-bottom: 37px;
   }
@@ -1109,6 +1134,11 @@ main {
   .activities__item {
     margin-right: 0;
     margin-bottom: 7.6%;
+  }
+}
+@media (max-width: 450px) {
+  .booking {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
@@ -1225,10 +1255,6 @@ main {
 @media (max-width: 320px) {
   .header__top {
     padding: 28px 0;
-  }
-
-  .container {
-    max-width: 87%;
   }
 
   .header__logo {

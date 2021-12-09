@@ -1,40 +1,16 @@
 /******* Media **********/
+@media (max-width: 1600px)
+  .hotel
+    .swiper
+      max-width: 850px
+
 @media (max-width: 1430px)
   .container
     max-width: 80%
 
   .hotel
-    margin-bottom: 59px
-
     .swiper
-      margin-bottom: 30px
-      margin-left: auto
-      margin-right: auto
-
-  
-  .booking
-    flex-basis: 100%
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    margin-bottom: -25px
-
-    &__card
-      padding-right: 23px
-      padding-left: 23px
-      margin-right: 5%
-      width: 340px
-      margin-left: auto
-
-    &__map
-      width: 340px
-      height: 210px
-      margin-right: auto  
-
-@media (max-width: 1360px)
-  .container
-    max-width: 91%
-
+      margin-right: 20px
 
 @media (max-width: 1269px)
   .footer__logo
@@ -55,6 +31,32 @@
 
 @media (max-width: 1200px)
 
+  .hotel
+
+    &__main
+      flex-direction: column
+      align-items: center
+
+    .swiper
+      margin-right: 0
+      margin-bottom: 30px
+      max-width: 100%
+
+  .booking
+    display: flex
+    flex-basis: auto
+    justify-content: space-between
+    width: 100%
+
+    &__card,&__map
+      width: 400px
+
+    &__card  
+      margin-bottom: 0
+      margin-right: 20px
+      padding-left: 22px
+      padding-right: 22px
+
   .activities
 
     &__flex-box
@@ -66,15 +68,23 @@
       margin-right: 3%
       padding-right: 110px 
 
-@media (max-width: 992px)
+@media (max-width: 1030px)
+
+  .hotel
+
+    .swiper
+      max-width: 100%
 
   .booking
-    &__card
-      margin-left: 0
-      margin-right: 0.5%
 
-    &__map
-      margin-right: 0
+    width: 100%
+
+@media (max-width: 880px)
+
+  .container
+    max-width: 91%    
+
+@media (max-width: 992px)
 
   .activities
     &__flex-box
@@ -136,6 +146,8 @@
     justify-content: space-evenly
 
   .hotel
+
+    margin-bottom: 57px
 
     .swiper
       height: 58.6vw
@@ -206,10 +218,6 @@
   .hotel__header-raiting
     display: none
 
-  .booking
-      flex-direction: column
-      align-items: center
-      margin-bottom: 0
 
 @media (max-width: 760px) 
   .activities
@@ -219,6 +227,23 @@
       margin-bottom: 0
     
 @media (max-width: 650px)
+  
+  .container
+    max-width: 87%
+
+  .booking
+    flex-direction: column
+    align-items: center
+    width: 75%
+
+    &__card
+      margin-right: 0
+      margin-bottom: 20px
+      width: 100%
+
+    &__map
+      width: 100%
+
   .subscribe
    
     &__title
@@ -228,6 +253,12 @@
     &__item
       margin-right: 0
       margin-bottom: 7.6%
+
+@media (max-width: 450px)
+
+  .booking
+    width: 100%
+
 
 @media (max-width: 400px)
   .hotel
@@ -344,9 +375,6 @@
 @media (max-width: 320px)
   .header__top 
     padding: 28px 0
-
-  .container
-    max-width: 87%
 
   .header__logo
     width: 98px
