@@ -754,7 +754,7 @@ main {
   padding-top: 28px;
 }
 .contacts__img-box {
-  width: 24px;
+  width: 22px;
   margin-right: 16px;
 }
 .contacts__subtitle {
@@ -789,9 +789,6 @@ main {
   border: none;
   width: 100%;
 }
-.send-message fieldset::last-child {
-  margin-right: 0;
-}
 .send-message__contacts {
   display: flex;
   flex-wrap: wrap;
@@ -802,6 +799,9 @@ main {
   min-width: 255px;
   margin-bottom: 13px;
   margin-right: 5.3%;
+}
+.send-message__input:last-child {
+  margin-right: 0;
 }
 .send-message__input::-moz-placeholder {
   font-size: 12px;
@@ -1055,7 +1055,7 @@ main {
     padding-top: 73px;
   }
   .footer__top {
-    margin-bottom: 18px;
+    margin-bottom: 62px;
   }
   .footer__logo {
     width: 96px;
@@ -1082,7 +1082,8 @@ main {
 
   .contacts {
     margin-left: 0;
-    margin-bottom: 36px;
+    margin-bottom: 39px;
+    padding-top: 0;
   }
   .contacts__text {
     padding-top: 30px;
