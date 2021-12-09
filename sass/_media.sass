@@ -79,12 +79,11 @@
 
     width: 100%
 
-@media (max-width: 880px)
-
-  .container
-    max-width: 91%    
 
 @media (max-width: 992px)
+
+  .container
+    max-width: 91%
 
   .activities
     &__flex-box
@@ -124,6 +123,24 @@
 
       &::before,&::after
         display: none
+
+  .footer
+
+    &__nav
+
+      margin-right: 0
+      margin-bottom: -30px
+
+      &-item
+        margin-right: 10px
+
+        &:first-child
+          flex-basis: auto
+        
+        &:nth-child(2)
+          margin-right: 10px
+        
+
  
 
 @media (max-width: 768px)
@@ -189,13 +206,10 @@
 
     &__nav
 
-      margin-right: 10px
-
-      &__nav-item
+      &-item
         margin-bottom: 30px
 
-      &-item:first-child
-        flex-basis: 200px
+    
 
     &__middle
       margin-bottom: 55px
