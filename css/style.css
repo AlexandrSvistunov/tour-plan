@@ -791,17 +791,13 @@ main {
 }
 .send-message__contacts {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .send-message__input {
   border-radius: 4px;
   padding: 15px 23px;
-  min-width: 255px;
   margin-bottom: 13px;
-  margin-right: 5.3%;
-}
-.send-message__input:last-child {
-  margin-right: 0;
+  width: 47%;
 }
 .send-message__input::-moz-placeholder {
   font-size: 12px;
@@ -893,18 +889,21 @@ main {
     margin-bottom: 35px;
     margin-right: 80px;
   }
-
   .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
-
   .footer__social--ipad {
     display: flex;
   }
-
   .footer__social--gesktop {
     display: none;
+  }
+
+  .contacts {
+    margin-bottom: 39px;
+    margin-left: 0;
+    padding-top: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -1086,12 +1085,10 @@ main {
   .footer__middle {
     margin-bottom: 55px;
   }
-
-  .contacts {
-    margin-left: 0;
-    margin-bottom: 39px;
-    padding-top: 0;
+  .footer__bottom {
+    max-width: 100%;
   }
+
   .contacts__text {
     padding-top: 30px;
   }
@@ -1142,6 +1139,10 @@ main {
   .activities__item {
     margin-right: 0;
     margin-bottom: 7.6%;
+  }
+
+  .footer__form {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 450px) {

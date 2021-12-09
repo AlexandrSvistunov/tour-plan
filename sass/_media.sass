@@ -13,20 +13,27 @@
       margin-right: 20px
 
 @media (max-width: 1269px)
-  .footer__logo
-    padding-top: 0
-    margin-bottom: 35px
-    margin-right: 80px
 
-  .footer__wrapper
-    display: flex
-    flex-wrap: wrap
+  .footer
+    &__logo
+      padding-top: 0
+      margin-bottom: 35px
+      margin-right: 80px
 
-  .footer__social--ipad
-    display: flex
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
 
-  .footer__social--gesktop
-    display: none
+    &__social--ipad
+      display: flex
+
+    &__social--gesktop
+      display: none
+
+  .contacts
+    margin-bottom: 39px
+    margin-left: 0
+    padding-top: 0 
 
 
 @media (max-width: 1200px)
@@ -141,8 +148,6 @@
           margin-right: 10px
         
 
- 
-
 @media (max-width: 768px)
   .search--header
     width: 48.6%
@@ -214,11 +219,10 @@
     &__middle
       margin-bottom: 55px
 
-  .contacts
-    margin-left: 0
-    margin-bottom: 39px
-    padding-top: 0
+    &__bottom
+      max-width: 100%
 
+  .contacts
     &__text
       padding-top: 30px
 
@@ -268,6 +272,11 @@
     &__item
       margin-right: 0
       margin-bottom: 7.6%
+
+  .footer
+
+    &__form
+      flex-basis: 100%
 
 @media (max-width: 450px)
 
