@@ -38,6 +38,10 @@
 
 @media (max-width: 1200px)
 
+  .container
+    &--subscribe
+      padding: 0 7.0%
+
   .hotel
 
     &__main
@@ -111,15 +115,16 @@
   .reviews
     padding-bottom: 120px
 
-    &__gallery::before
-      left: 0
-      top: 45.5%
+    &__swiper-button
+      top: 50%
 
-    &__gallery::after
-      right: 0
-      top: 45.5%
+      &--prev
+        left: 0
 
-    &__tile
+      &--next
+        right: 0
+
+    &__title
       font-size: 30px
       margin-bottom: 52px
       
@@ -244,6 +249,11 @@
       justify-content: center
       margin-right: 0
       margin-bottom: 0
+
+  .subscribe
+   
+    &__title
+      margin-bottom: 37px
     
 @media (max-width: 650px)
   
@@ -263,11 +273,6 @@
     &__map
       width: 100%
 
-  .subscribe
-   
-    &__title
-      margin-bottom: 37px
-
   .activities
     &__item
       margin-right: 0
@@ -278,10 +283,25 @@
     &__form
       flex-basis: 100%
 
-@media (max-width: 450px)
+
+@media (max-width: 530px)
 
   .booking
     width: 100%
+
+  .reviews__guest-text
+    padding-right: 30px
+    padding-left: 30px
+
+@media (max-width: 450px)
+
+  .send-message
+
+    &__contacts
+      flex-wrap: wrap
+
+    &__input
+      width: 100% 
 
 
 @media (max-width: 400px)
@@ -294,7 +314,7 @@
       margin-right: 0
       margin-top: 12px
 
-    .swiper
+    &__swiper
 
       &-button
         width: 10px
@@ -347,8 +367,11 @@
 
   .reviews
     padding-bottom: 95px
+
+    &__img-box
+      margin-bottom: 11px
     
-    &__tile
+    &__title
       font-size: 18px
       max-width: 245px
       margin-right: auto
@@ -360,20 +383,23 @@
       .stars
         margin-right: 0
 
-    &__gallery::before,&__gallery::after
-      top: 6%
+      &-name
+        margin-bottom: 11px
+
+    &__swiper-button
+      top: 10%
       z-index: 99
 
-    &__gallery::before
-      left: 32px
+      &--prev
+        left: 32px
       
-    &__gallery::after
-      right: 32px
+      &--next
+        right: 32px
 
     &__guest-text
       max-width: 100% 
-      padding: 140px 30px 30px
-      margin-top: -108px
+      padding: 135px 30px 30px
+      margin-top: -102px
 
       p
         text-align: left
@@ -395,6 +421,74 @@
 
     &__title
       margin-bottom: 37px
+
+  .footer
+    padding-top: 68px
+
+    &__logo
+      margin-bottom: 42px
+
+    &-title
+      margin-bottom: 22px
+      &--form
+        margin-bottom: 17px
+      &--nav
+        margin-bottom: 17px
+
+    &__wrapper
+      margin-bottom: 34px
+
+    &__nav-item:last-child
+      order: -1
+    
+    &__nav-item:first-child
+      order: 1
+
+    &__aditional-information
+      margin-bottom: 0
+
+    &__top
+      margin-bottom: 41px
+
+  .contacts
+    margin-bottom: 31px
+
+    &__text
+      padding-top: 0
+
+    &__subtitle
+      line-height: 24px
+      margin-bottom: 23px
+
+    &__item
+      margin-left: 0
+      margin-bottom: 26px
+
+    &__img-box
+      width: 24px
+      margin-right: 8px
+
+    &__info
+      width: 100%
+      line-height: 22px
+      margin-top: -4px
+
+    &__telephone
+      width: 100%
+      margin-top: -3px
+
+      p
+        line-height: 22px
+        margin-bottom: 0
+
+    &__mail
+      width: 100%
+
+  .send-message__input
+    margin-bottom: 14px
+
+  .send-message__text
+    margin-bottom: 45px
 
 @media (max-width: 320px)
   .header__top 
