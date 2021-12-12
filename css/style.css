@@ -1168,6 +1168,16 @@ main {
     padding-right: 30px;
     padding-left: 30px;
   }
+  .reviews__swiper-button {
+    top: 48px;
+    z-index: 99;
+  }
+  .reviews__swiper-button--prev {
+    left: 32px;
+  }
+  .reviews__swiper-button--next {
+    right: 32px;
+  }
 }
 @media (max-width: 450px) {
   .send-message__contacts {
@@ -1255,16 +1265,6 @@ main {
   }
   .reviews__guest-name {
     margin-bottom: 11px;
-  }
-  .reviews__swiper-button {
-    top: 10%;
-    z-index: 99;
-  }
-  .reviews__swiper-button--prev {
-    left: 32px;
-  }
-  .reviews__swiper-button--next {
-    right: 32px;
   }
   .reviews__guest-text {
     max-width: 100%;
