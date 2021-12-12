@@ -456,6 +456,7 @@ main {
   padding-bottom: 90px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .subscribe__title {
   font-size: 24px;

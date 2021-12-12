@@ -53,3 +53,5 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
   //    el: '.swiper-scrollbar',
   //  },
 });
+
+$.stellar();
