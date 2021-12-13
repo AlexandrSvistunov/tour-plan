@@ -323,6 +323,10 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.hotel__main iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .booking {
   flex-basis: 350px;
