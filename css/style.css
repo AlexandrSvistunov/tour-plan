@@ -767,13 +767,13 @@ main {
 }
 .contacts__text {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 13px;
   color: #BDBDBD;
   padding-top: 28px;
 }
 .contacts__img-box {
   width: 22px;
-  margin-right: 16px;
+  margin-right: 19px;
 }
 .contacts__subtitle {
   margin-bottom: 31px;
@@ -784,7 +784,7 @@ main {
 .contacts__item {
   display: flex;
   margin-left: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .contacts__item a {
   display: inline;
@@ -855,7 +855,7 @@ main {
   color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
-  padding: 18px 65px;
+  padding: 18px 66px;
 }
 
 /**********Footer-bottom***********/
@@ -1105,7 +1105,10 @@ main {
   }
 
   .contacts__text {
-    padding-top: 30px;
+    padding-top: 28px;
+  }
+  .contacts__subtitle {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -1302,7 +1305,7 @@ main {
     margin-bottom: 42px;
   }
   .footer-title {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
   .footer-title--form {
     margin-bottom: 17px;
@@ -1311,7 +1314,7 @@ main {
     margin-bottom: 17px;
   }
   .footer__wrapper {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
   .footer__nav-item:last-child {
     order: -1;
@@ -1325,6 +1328,15 @@ main {
   .footer__top {
     margin-bottom: 41px;
   }
+  .footer__middle {
+    margin-bottom: 23px;
+  }
+  .footer__bottom-link {
+    margin-right: 10px;
+  }
+  .footer__bottom-links {
+    line-height: 31px;
+  }
 
   .contacts {
     margin-bottom: 31px;
@@ -1333,11 +1345,11 @@ main {
     padding-top: 0;
   }
   .contacts__subtitle {
-    line-height: 24px;
+    line-height: 22px;
     margin-bottom: 23px;
   }
   .contacts__item {
-    margin-left: 0;
+    margin-left: 2px;
     margin-bottom: 26px;
   }
   .contacts__img-box {
@@ -1364,9 +1376,18 @@ main {
   .send-message__input {
     margin-bottom: 14px;
   }
-
   .send-message__text {
-    margin-bottom: 45px;
+    margin-bottom: 18px;
+  }
+  .send-message__send {
+    flex-wrap: wrap;
+  }
+  .send-message__send span {
+    order: -1;
+    margin-bottom: 16px;
+  }
+  .send-message #send {
+    width: 50%;
   }
 }
 @media (max-width: 320px) {

@@ -220,7 +220,10 @@
 
   .contacts
     &__text
-      padding-top: 30px
+      padding-top: 28px
+
+    &__subtitle
+      margin-bottom: 30px
 
  
 @media (max-width: 767px)
@@ -428,14 +431,14 @@
       margin-bottom: 42px
 
     &-title
-      margin-bottom: 22px
+      margin-bottom: 25px
       &--form
         margin-bottom: 17px
       &--nav
         margin-bottom: 17px
 
     &__wrapper
-      margin-bottom: 34px
+      margin-bottom: 31px
 
     &__nav-item:last-child
       order: -1
@@ -449,6 +452,15 @@
     &__top
       margin-bottom: 41px
 
+    &__middle 
+      margin-bottom: 23px
+      
+    &__bottom-link
+      margin-right: 10px
+
+    &__bottom-links
+      line-height: 31px
+
   .contacts
     margin-bottom: 31px
 
@@ -456,11 +468,11 @@
       padding-top: 0
 
     &__subtitle
-      line-height: 24px
+      line-height: 22px
       margin-bottom: 23px
 
     &__item
-      margin-left: 0
+      margin-left: 2px
       margin-bottom: 26px
 
     &__img-box
@@ -483,12 +495,25 @@
     &__mail
       width: 100%
 
-  .send-message__input
-    margin-bottom: 14px
+  .send-message
 
-  .send-message__text
-    margin-bottom: 45px
+    &__input
+      margin-bottom: 14px
 
+    &__text
+      margin-bottom: 18px
+
+    &__send
+
+      flex-wrap: wrap
+      
+      span
+        order: -1
+        margin-bottom: 16px
+
+    #send
+      width: 50%  
+      
 @media (max-width: 320px)
   .header__top 
     padding: 28px 0
