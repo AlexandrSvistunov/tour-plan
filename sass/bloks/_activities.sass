@@ -11,13 +11,11 @@
 
   &__flex-box
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
     margin-bottom: -2.8%
     margin-right: -1%
 
-   
-
+    
   &__item--1
     background-image: url(../img/activities-1.jpg)
 
@@ -48,14 +46,19 @@
 
   &__item
     position: relative
-    width: 255px
+    flex-basis: 255px
     border-radius: 6px
     color: #ffffff
     margin-bottom: 2.8%
     margin-right: 1%
-    padding: 143px 26px 71px
+    padding: 25px 26px 71px
     background-size: cover
     background-position-x: -42px
+    background-repeat: no-repeat
+    min-height: 255px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
 
     &::before
       content: ''
