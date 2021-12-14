@@ -964,10 +964,6 @@ main {
   }
 }
 @media (max-width: 1030px) {
-  .hotel .swiper {
-    max-width: 100%;
-  }
-
   .booking {
     width: 100%;
   }
@@ -1057,7 +1053,6 @@ main {
   }
   .hotel .swiper {
     height: 58.6vw;
-    margin-bottom: 30px;
   }
 
   .booking__card {
@@ -1198,6 +1193,27 @@ main {
   }
 }
 @media (max-width: 400px) {
+  .header__top {
+    padding: 28px 0;
+  }
+
+  .header__logo {
+    width: 98px;
+    margin-right: 0;
+    padding-bottom: 3px;
+  }
+
+  .hotel {
+    padding-top: 23px;
+    margin-bottom: 40px;
+  }
+  .hotel__header {
+    margin-bottom: 39px;
+  }
+  .hotel .swiper {
+    height: 56vw;
+    margin-bottom: 20px;
+  }
   .hotel__header-wrapper {
     justify-content: space-between;
   }
@@ -1286,12 +1302,13 @@ main {
   }
 
   .activities {
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
   .activities__title {
     font-size: 18px;
   }
   .activities__item {
+    background-position-x: -31px;
     padding-right: 19%;
   }
   .activities__item--2, .activities__item--4 {
@@ -1391,36 +1408,5 @@ main {
   }
   .send-message #send {
     width: 50%;
-  }
-}
-@media (max-width: 320px) {
-  .header__top {
-    padding: 28px 0;
-  }
-
-  .header__logo {
-    width: 98px;
-    margin-right: 0;
-    padding-bottom: 3px;
-  }
-
-  .hotel {
-    padding-top: 23px;
-    margin-bottom: 40px;
-  }
-  .hotel__header {
-    margin-bottom: 39px;
-  }
-  .hotel .swiper {
-    width: 100%;
-    height: 56vw;
-    margin-bottom: 20px;
-  }
-
-  .activities {
-    padding-bottom: 45px;
-  }
-  .activities__item {
-    background-position-x: -31px;
   }
 }/*# sourceMappingURL=style.css.map */
