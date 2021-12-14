@@ -955,7 +955,7 @@ main {
     width: 100%;
   }
   .booking__card, .booking__map {
-    width: 400px;
+    width: 48.4%;
   }
   .booking__card {
     margin-bottom: 0;
@@ -1137,7 +1137,7 @@ main {
   .booking {
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    width: 100%;
   }
   .booking__card {
     margin-right: 0;
