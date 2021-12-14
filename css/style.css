@@ -478,7 +478,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .email-input {
@@ -1124,7 +1123,11 @@ main {
     display: none;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 660px) {
+  .container--subscribe {
+    flex-wrap: wrap;
+  }
+
   .subscribe__title {
     margin-bottom: 37px;
   }
