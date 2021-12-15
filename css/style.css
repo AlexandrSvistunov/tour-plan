@@ -111,6 +111,12 @@ button {
   margin: auto;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
 /********** Header ***********/
 .header__menu-burger {
   display: none;
@@ -409,7 +415,7 @@ main {
 
 /********** Swiper slider ***********/
 .hotel .swiper {
-  max-width: 728px;
+  max-width: 730px;
   height: 450px;
   margin: 0;
   margin-right: 30px;
@@ -886,11 +892,6 @@ main {
 }
 
 /******* Media **********/
-@media (max-width: 1600px) {
-  .hotel .swiper {
-    max-width: 850px;
-  }
-}
 @media (max-width: 1430px) {
   .container {
     max-width: 80%;
