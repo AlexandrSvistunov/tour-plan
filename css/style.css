@@ -1062,12 +1062,6 @@ main {
     width: 340px;
   }
 
-  .subscribe {
-    background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../img/subscribe-bg-img-768.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   .activities {
     padding-bottom: 70px;
   }
@@ -1308,7 +1302,6 @@ main {
     font-size: 18px;
   }
   .activities__item {
-    background-position-x: -31px;
     padding-right: 19%;
   }
   .activities__item--2, .activities__item--4 {
@@ -1408,5 +1401,10 @@ main {
   }
   .send-message #send {
     width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .activities__item {
+    background-position-x: -31px;
   }
 }/*# sourceMappingURL=style.css.map */
