@@ -117,6 +117,17 @@ button {
   text-transform: uppercase;
 }
 
+.flash-offer {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 3px;
+}
+
 /********** Header ***********/
 .header__menu-burger {
   display: none;
@@ -301,17 +312,6 @@ main {
   font-size: 10px;
 }
 
-.flash-offer {
-  background-color: #EC1F46;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 4px 10px;
-  font-size: 10px;
-  line-height: 13px;
-  border-radius: 3px;
-}
-
 /********** Stars ***********/
 .stars {
   line-height: 0;
@@ -342,13 +342,11 @@ main {
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
-  padding: 28px;
+  padding-bottom: 28px;
   padding-top: 25px;
   margin-bottom: 7.5%;
-}
-.booking__card img {
-  width: 13px;
-  height: 12px;
+  padding-left: 26px;
+  padding-right: 29px;
 }
 .booking__price {
   font-size: 24px;
@@ -357,7 +355,7 @@ main {
 .booking__quick {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 .booking__quick span, .booking__quick a {
@@ -365,10 +363,6 @@ main {
 }
 .booking__quick img {
   margin-right: 9px;
-}
-.booking__quick p {
-  display: flex;
-  align-items: center;
 }
 .booking__button {
   width: 100%;
@@ -404,13 +398,21 @@ main {
 }
 .booking-info__right {
   flex-basis: 80px;
-  font-size: 12px;
   padding-top: 9px;
 }
-.booking-info__right p {
-  margin-bottom: 10px;
+
+.room-info {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+.room-info span {
+  font-size: 12px;
+}
+
+.room-info-img {
+  width: 12px;
 }
 
 /********** Swiper slider ***********/
@@ -456,6 +458,122 @@ main {
 .hotel__swiper-button--prev {
   left: 18px;
   background-image: url(../img/svg/arrow-left.svg);
+}
+
+/********** Packages ***********/
+.packages {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.packages__flash-offer {
+  position: absolute;
+  top: 26px;
+  font-weight: 600;
+  font-size: 8px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 3px 9px;
+  padding-right: 10px;
+}
+.packages__flash-offer--big {
+  top: 27px;
+  font-size: 12px;
+  padding: 8px 12px;
+  padding-right: 20px;
+}
+.packages__title {
+  margin-bottom: 67px;
+}
+.packages__wrapper {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 30px;
+}
+.packages__card {
+  border-radius: 8px;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.packages__card-info {
+  background-color: #0A223D;
+  color: #ffffff;
+  text-align: left;
+  padding: 31px 22px 25px 32px;
+}
+.packages__card-info--big {
+  padding: 47px 22px 30px 45px;
+}
+.packages__card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.packages__card-title--big {
+  margin-bottom: 28px;
+}
+.packages__card-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 48px;
+}
+.packages__card--big {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.packages__card--big img {
+  height: 100%;
+}
+.packages__card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.packages__card-price span {
+  display: block;
+}
+.packages__card-first-price {
+  font-size: 14px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 4px;
+}
+.packages__card-discount-price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+}
+.packages__card-button {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 26px;
+}
+.packages__room {
+  margin-bottom: 26px;
+}
+.packages__room .room-info {
+  justify-content: start;
+  margin-bottom: 12px;
+}
+.packages__room .room-info-img {
+  margin-right: 16px;
+}
+.packages__room--big {
+  margin-bottom: 36px;
+}
+.packages__room--big .room-info {
+  margin-bottom: 11px;
+}
+.packages__room--big .room-info-img {
+  width: 14px;
 }
 
 /********** Subscribe *********** */
@@ -517,9 +635,6 @@ main {
   padding-bottom: 128px;
 }
 .reviews__title {
-  font-weight: 700;
-  font-size: 36px;
-  text-transform: uppercase;
   margin-bottom: 72px;
 }
 .reviews__guest {

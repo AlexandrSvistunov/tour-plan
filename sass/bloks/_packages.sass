@@ -1,0 +1,119 @@
+/********** Packages ***********/
+.packages
+  text-align: center
+  padding-top: 40px
+  padding-bottom: 70px
+
+  &__flash-offer
+    position: absolute
+    top: 26px
+    font-weight: 600
+    font-size: 8px
+    border-radius: 4px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    padding: 3px 9px
+    padding-right: 10px
+
+    &--big
+      top: 27px
+      font-size: 12px
+      padding: 8px 12px
+      padding-right: 20px
+
+  &__title
+    margin-bottom: 67px
+
+  &__wrapper
+    display: grid
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr)
+    gap: 30px
+
+  &__card
+    border-radius: 8px
+    min-height: 500px
+    overflow: hidden
+    position: relative
+
+    &-info
+      background-color: $dack-bg
+      color: #ffffff
+      text-align: left
+      padding: 31px 22px 25px 32px
+      
+
+      &--big
+        padding: 47px 22px 30px 45px
+
+    &-title
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 25px
+
+      &--big
+        margin-bottom: 28px
+
+    &-text
+      font-size: 14px
+      line-height: 22px
+      margin-bottom: 48px
+
+    &--big
+      grid-column: 1/3
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+
+      img 
+        height: 100%
+
+    &-footer
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+
+    &-price
+      span
+        display: block
+
+    &-first-price
+      font-size: 14px
+      text-decoration-line: line-through
+      margin-bottom: 4px
+
+    &-discount-price
+      font-weight: 700
+      font-size: 24px
+      line-height: 37px
+
+    &-button
+      +button
+      font-family: $font-nunito
+      font-weight: 600
+      font-size: 14px
+      padding: 12px 26px
+
+
+  &__room
+
+    margin-bottom: 26px
+
+    .room-info
+        justify-content: start
+        margin-bottom: 12px
+
+    .room-info-img
+      margin-right: 16px
+
+    &--big
+      margin-bottom: 36px
+      
+      .room-info
+        margin-bottom: 11px
+
+      .room-info-img
+        width: 14px 
+
+    
+
+  
+  
