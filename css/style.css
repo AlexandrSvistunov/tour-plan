@@ -493,6 +493,7 @@ main {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   grid-gap: 30px;
+  min-width: 278px;
 }
 .packages__card {
   border-radius: 8px;
@@ -542,8 +543,7 @@ main {
 }
 .packages__card-first-price {
   font-size: 14px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration: line-through;
   margin-bottom: 4px;
 }
 .packages__card-discount-price {
@@ -1083,16 +1083,31 @@ main {
     padding-left: 22px;
     padding-right: 22px;
   }
+
+  .packages__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .packages__card-text {
+    margin-bottom: 20px;
+  }
+  .packages__card-title {
+    margin-bottom: 20px;
+  }
+  .packages__room {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 1100px) {
   .packages__wrapper {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     grid-gap: 25px;
   }
-  .packages__card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .packages__card-info--big {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 @media (max-width: 1030px) {
@@ -1107,6 +1122,11 @@ main {
 
   .search--header {
     width: 40%;
+  }
+
+  .packages__title {
+    font-size: 30px;
+    margin-bottom: 52px;
   }
 
   .subscribe {
@@ -1194,6 +1214,10 @@ main {
     width: 340px;
   }
 
+  .packages__card-info--big {
+    padding-top: 30px;
+  }
+
   .activities {
     padding-bottom: 70px;
   }
@@ -1279,6 +1303,39 @@ main {
 
   .footer__form {
     flex-basis: 100%;
+  }
+
+  .packages__card-info {
+    padding: 31px 20px 20px 20px;
+  }
+  .packages__card-info--big {
+    padding: 25px 25px 20px 30px;
+  }
+}
+@media (max-width: 630px) {
+  .packages .stars {
+    display: none;
+  }
+  .packages__flash-offer--big {
+    font-size: 8px;
+    padding: 3px 9px;
+    padding-right: 10px;
+  }
+  .packages__wrapper {
+    grid-template: repeat(5, 1fr)/1fr;
+  }
+  .packages__card {
+    grid-template-rows: repeat(2, 250px);
+  }
+  .packages__card-text {
+    display: none;
+  }
+  .packages__card--big {
+    grid-column: 1/2;
+    grid-template-columns: 1fr;
+  }
+  .packages__card-info {
+    padding: 25px 25px 20px 30px;
   }
 }
 @media (max-width: 576px) {
@@ -1376,6 +1433,11 @@ main {
   .booking__map {
     width: 100%;
     height: 173px;
+  }
+
+  .packages__title {
+    font-size: 18px;
+    margin-bottom: 44px;
   }
 
   .subscribe {
