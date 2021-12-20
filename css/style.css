@@ -253,13 +253,33 @@ main {
 }
 .bread-crumbs__item {
   margin-right: 3px;
+  position: relative;
 }
 .bread-crumbs__item:hover {
   color: #2917c5;
 }
+.bread-crumbs__item:active {
+  color: #333333;
+}
 .bread-crumbs__item::after {
   content: "/";
   margin-left: 2px;
+}
+.bread-crumbs__item:hover::before {
+  transform: scaleX(1);
+}
+.bread-crumbs__item::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #2917c5;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+.bread-crumbs__item:active::before {
+  display: none;
 }
 
 .active {
