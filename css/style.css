@@ -1034,24 +1034,6 @@ main {
 
   .footer__logo {
     padding-top: 0;
-    margin-bottom: 35px;
-    margin-right: 80px;
-  }
-  .footer__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer__social--ipad {
-    display: flex;
-  }
-  .footer__social--gesktop {
-    display: none;
-  }
-
-  .contacts {
-    margin-bottom: 39px;
-    margin-left: 0;
-    padding-top: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -1099,6 +1081,36 @@ main {
   }
   .packages__room {
     margin-bottom: 20px;
+  }
+
+  .footer__grid-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0;
+  }
+  .footer__logo {
+    grid-row: 1/2;
+    margin-bottom: 12px;
+  }
+  .footer__social {
+    grid-row: 1/2;
+    grid-column: span 3;
+    align-self: center;
+  }
+  .footer__categories {
+    grid-row: 2/3;
+  }
+  .footer__additional {
+    min-width: 248px;
+  }
+  .footer__legal {
+    padding-left: 0;
+    justify-self: end;
+  }
+  .footer__contacts {
+    grid-row: 3;
+  }
+  .footer__form {
+    grid-row: 4;
   }
 }
 @media (max-width: 1100px) {
@@ -1226,34 +1238,42 @@ main {
   .footer {
     padding-top: 73px;
   }
+  .footer__grid-wrapper {
+    grid-template-columns: 160px 1fr 1fr;
+    grid-row-gap: 40px;
+  }
   .footer__top {
     margin-bottom: 62px;
   }
   .footer__logo {
     width: 96px;
-    margin-bottom: 12px;
-    margin-right: 13%;
   }
-  .footer__wrapper {
-    margin-bottom: 39px;
-    align-items: center;
-    width: 100%;
+  .footer__title {
+    margin-bottom: 20px;
   }
-  .footer__nav-item {
-    margin-bottom: 30px;
+  .footer__title--form {
+    margin-bottom: 36px;
   }
-  .footer__middle {
-    margin-bottom: 55px;
+  .footer__social {
+    padding-left: 26px;
   }
-  .footer__bottom {
-    max-width: 100%;
+  .footer__additional {
+    min-width: 300px;
+    padding-left: 40px;
   }
-
-  .contacts__text {
-    padding-top: 28px;
+  .footer__legal {
+    padding-right: 10px;
   }
-  .contacts__subtitle {
-    margin-bottom: 30px;
+  .footer__contacts {
+    grid-column: span 3;
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .footer__form {
+    grid-column: span 3;
+    padding-top: 0;
+    margin-top: -4px;
+    max-width: 539px;
   }
 }
 @media (max-width: 767px) {

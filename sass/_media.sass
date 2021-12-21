@@ -22,24 +22,7 @@
   .footer
     &__logo
       padding-top: 0
-      margin-bottom: 35px
-      margin-right: 80px
-
-    &__wrapper
-      display: flex
-      flex-wrap: wrap
-
-    &__social--ipad
-      display: flex
-
-    &__social--gesktop
-      display: none
-
-  .contacts
-    margin-bottom: 39px
-    margin-left: 0
-    padding-top: 0 
-
+   
 
 @media (max-width: 1200px)
 
@@ -88,7 +71,41 @@
       margin-bottom: 20px
 
     &__room
-      margin-bottom: 20px    
+      margin-bottom: 20px
+
+  .footer
+
+    &__grid-wrapper
+      grid-template-columns: repeat(3, 1fr)
+      grid-column-gap: 0
+
+    &__logo
+      grid-row: 1/2
+      margin-bottom: 12px
+
+    &__social
+      grid-row: 1/2
+      grid-column: span 3
+      align-self: center
+
+    &__categories
+      grid-row: 2/3
+
+    &__additional
+      min-width: 248px
+
+    &__legal
+      padding-left: 0
+      justify-self: end
+
+    &__contacts
+      grid-row: 3
+
+    &__form
+      grid-row: 4
+
+    
+
 
 @media (max-width: 1100px)
   .packages
@@ -213,38 +230,42 @@
   .footer
     padding-top: 73px
 
+    &__grid-wrapper
+      grid-template-columns: 160px 1fr 1fr
+      grid-row-gap: 40px
+
     &__top
       margin-bottom: 62px
 
     &__logo
       width: 96px
-      margin-bottom: 12px
-      margin-right: 13%
 
-    &__wrapper
-      margin-bottom: 39px
-      align-items: center
-      width: 100%
+    &__title
+      margin-bottom: 20px
+      
+      &--form
+        margin-bottom: 36px
 
-    &__nav
+    &__social
+      padding-left: 26px
 
-      &-item
-        margin-bottom: 30px
+    &__additional
+      min-width: 300px
+      padding-left: 40px
 
-    
+    &__legal
+      padding-right: 10px
 
-    &__middle
-      margin-bottom: 55px
+    &__contacts
+      grid-column: span 3
+      padding-top: 20px
+      margin-left: 0
 
-    &__bottom
-      max-width: 100%
-
-  .contacts
-    &__text
-      padding-top: 28px
-
-    &__subtitle
-      margin-bottom: 30px
+    &__form
+      grid-column: span 3
+      padding-top: 0
+      margin-top: -4px
+      max-width: 539px
 
  
 @media (max-width: 767px)
