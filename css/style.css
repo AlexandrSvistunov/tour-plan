@@ -836,102 +836,48 @@ main {
   color: #ffffff;
   padding-top: 108px;
   padding-bottom: 47px;
-}
-.footer__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 97px;
+  /**********Footer-contacts***********/
 }
 .footer__logo {
   width: 153px;
   padding-top: 30px;
 }
-.footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 820px;
-  justify-content: space-between;
-  margin-right: 5px;
-}
-.footer__nav-item:first-child {
-  flex-basis: 286px;
-}
-.footer__nav-item:nth-child(2) {
-  margin-right: auto;
-}
-.footer__nav-item ul {
-  font-size: 14px;
-  line-height: 160%;
-  color: #BDBDBD;
-}
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
-.footer-title--nav {
-  margin-bottom: 17px;
-}
-.footer__aditional-information {
-  margin-bottom: 23px;
-}
-.footer__social {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer__social h4 {
-  margin-right: 43px;
-}
-.footer__social-box {
-  display: flex;
-  min-width: 85px;
-  justify-content: space-between;
-}
-.footer__social-box-link {
+.footer__social-link {
   width: 22px;
 }
 
-.footer__social--ipad {
-  display: none;
-}
-
-/**********Footer-middle***********/
-.footer__middle {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 95px;
-}
-
-.contacts {
+.footer__contacts {
   padding-top: 13px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.contacts__text {
+.footer__contacts-text {
   font-size: 14px;
   line-height: 13px;
   color: #BDBDBD;
   padding-top: 28px;
 }
-.contacts__img-box {
+.footer__contacts-img-box {
   width: 22px;
   margin-right: 19px;
 }
-.contacts__subtitle {
+.footer__contacts-subtitle {
   margin-bottom: 31px;
 }
-.contacts__telephone p {
+.footer__contacts-telephone p {
   margin-bottom: 8px;
 }
-.contacts__item {
+.footer__contacts-item {
   display: flex;
   margin-left: 5px;
   margin-bottom: 22px;
 }
-.contacts__item a {
+.footer__contacts-item a {
   display: inline;
 }
 
