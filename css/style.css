@@ -838,29 +838,66 @@ main {
   padding-bottom: 47px;
   /**********Footer-contacts***********/
 }
+.footer__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-auto-rows: minmax(83px, -webkit-min-content);
+  grid-auto-rows: minmax(83px, min-content);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  margin-bottom: 96px;
+}
+.footer__legal {
+  padding-left: 60px;
+}
 .footer__logo {
   width: 153px;
   padding-top: 30px;
+  grid-row: 1/3;
+}
+.footer__categories {
+  grid-row: 1/3;
 }
 .footer__title {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.footer__top-links {
+  font-size: 14px;
+  line-height: 22px;
+  color: #BDBDBD;
+}
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row: 2/3;
+  grid-column: span 2;
+}
+.footer__social h4 {
+  margin-right: 43px;
+  margin-bottom: 0;
 }
 .footer__social-link {
   width: 22px;
 }
-
+.footer__social-box {
+  display: flex;
+  min-width: 85px;
+  justify-content: space-between;
+}
 .footer__contacts {
-  padding-top: 13px;
+  padding-top: 28px;
   margin-left: -5px;
-  margin-right: 10px;
+  grid-column: span 2;
 }
 .footer__contacts-text {
   font-size: 14px;
-  line-height: 13px;
+  line-height: 14px;
   color: #BDBDBD;
-  padding-top: 28px;
+  padding-top: 8px;
 }
 .footer__contacts-img-box {
   width: 22px;
@@ -880,43 +917,41 @@ main {
 .footer__contacts-item a {
   display: inline;
 }
-
 .footer__form {
-  flex-basis: 539px;
+  padding-top: 15px;
+  grid-column: span 2;
 }
-
 .footer-title--form {
   margin-bottom: 36px;
 }
-
-.send-message {
+.footer .send-message {
   width: 100%;
 }
-.send-message fieldset {
+.footer .send-message fieldset {
   padding: 0;
   margin: 0;
   border: none;
   width: 100%;
 }
-.send-message__contacts {
+.footer .send-message__contacts {
   display: flex;
   justify-content: space-between;
 }
-.send-message__input {
+.footer .send-message__input {
   border-radius: 4px;
   padding: 15px 23px;
   margin-bottom: 13px;
   width: 47%;
 }
-.send-message__input::-moz-placeholder {
+.footer .send-message__input::-moz-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }
-.send-message__input::-webkit-input-placeholder {
+.footer .send-message__input::-webkit-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }
-.send-message__text {
+.footer .send-message__text {
   border-radius: 4px;
   width: 100%;
   min-height: 123px;
@@ -924,15 +959,15 @@ main {
   resize: none;
   margin-bottom: 24px;
 }
-.send-message__text::-moz-placeholder {
+.footer .send-message__text::-moz-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }
-.send-message__text::-webkit-input-placeholder {
+.footer .send-message__text::-webkit-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }
-.send-message__send {
+.footer .send-message__send {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -940,8 +975,7 @@ main {
   font-size: 12px;
   color: #FFFFFF;
 }
-
-.button-submit {
+.footer .button-submit {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
@@ -951,6 +985,7 @@ main {
 
 /**********Footer-bottom***********/
 .footer__bottom {
+  grid-column: span 2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

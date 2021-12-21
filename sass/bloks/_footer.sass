@@ -5,115 +5,151 @@
   color: #ffffff
   padding-top: 108px
   padding-bottom: 47px
+  
+  &__grid-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(83px, min-content)
+    grid-column-gap: 30px
+    grid-row-gap: 20px
+    margin-bottom: 96px
+
+  &__legal
+    padding-left: 60px
 
   &__logo
     width: 153px
     padding-top: 30px
+    grid-row: 1/3
+
+  &__categories
+    grid-row: 1/3
 
   &__title
     font-weight: 700
     font-size: 18px
     text-transform: uppercase
+    margin-bottom: 22px
+
+  &__top-links
+    font-size: 14px
+    line-height: 22px
+    color: #BDBDBD
 
   &__social
+    display: flex
+    flex-wrap: wrap
+    grid-row: 2/3
+    grid-column: span 2
+
+    h4
+      margin-right: 43px
+      margin-bottom: 0
     
- 
     &-link
       width: 22px
+
+    &-box
+      display: flex
+      min-width: 85px
+      justify-content: space-between
 
 
   /**********Footer-contacts***********/
 
-.footer__contacts
-  padding-top: 13px
-  margin-left: -5px
-  margin-right: 10px
-
-  &-text
-    font-size: 14px
-    line-height: 13px
-    color: $footer-color
-    padding-top: 28px
-
-  &-img-box
-    width: 22px
-    margin-right: 19px
-
-  &-subtitle
-    margin-bottom: 31px
-
-  &-telephone
-    p
-      margin-bottom: 8px
-
-  &-item
-    display: flex
-    margin-left: 5px
-    margin-bottom: 22px
-
-    a
-      display: inline
-
-.footer__form
-  flex-basis: 539px
-
-.footer-title--form
-  margin-bottom: 36px
- 
-.send-message
-  width: 100%
-
-  fieldset
-    padding: 0
-    margin: 0
-    border: none
-    width: 100%
-
   &__contacts
-    display: flex
-    justify-content: space-between
+    padding-top: 28px
+    margin-left: -5px
+    grid-column: span 2
 
-  &__input
-    border-radius: 4px
-    padding: 15px 23px
-    margin-bottom: 13px
-    width: 47%
-    
-    &::-moz-placeholder
-      +form-style
 
-    &::-webkit-input-placeholder
-      +form-style
+    &-text
+      font-size: 14px
+      line-height: 14px
+      color: $footer-color
+      padding-top: 8px
 
-  &__text
-    border-radius: 4px
+    &-img-box
+      width: 22px
+      margin-right: 19px
+
+    &-subtitle
+      margin-bottom: 31px
+
+    &-telephone
+      p
+        margin-bottom: 8px
+
+    &-item
+      display: flex
+      margin-left: 5px
+      margin-bottom: 22px
+
+      a
+        display: inline
+
+  &__form
+    padding-top: 15px
+    grid-column: span 2
+
+  &-title--form
+    margin-bottom: 36px
+ 
+  .send-message
     width: 100%
-    min-height: 123px
-    padding: 18px 20px
-    resize: none
-    margin-bottom: 24px
 
-    &::-moz-placeholder
-      +form-style
+    fieldset
+      padding: 0
+      margin: 0
+      border: none
+      width: 100%
 
-    &::-webkit-input-placeholder
-      +form-style
+    &__contacts
+      display: flex
+      justify-content: space-between
 
-  &__send
-    display: flex
-    justify-content: space-between
-    align-items: center
-    font-weight: 700
-    font-size: 12px
-    color: #FFFFFF
+    &__input
+      border-radius: 4px
+      padding: 15px 23px
+      margin-bottom: 13px
+      width: 47%
+    
+      &::-moz-placeholder
+        +form-style
 
-.button-submit
-    +button
-    padding: 18px 66px
+      &::-webkit-input-placeholder
+        +form-style
+
+    &__text
+      border-radius: 4px
+      width: 100%
+      min-height: 123px
+      padding: 18px 20px
+      resize: none
+      margin-bottom: 24px
+
+      &::-moz-placeholder
+        +form-style
+
+      &::-webkit-input-placeholder
+        +form-style
+
+    &__send
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-weight: 700
+      font-size: 12px
+      color: #FFFFFF
+
+  .button-submit
+      +button
+      padding: 18px 66px
 
 
 /**********Footer-bottom***********/
 .footer__bottom
+  grid-column: span 2
   display: flex
   justify-content: space-between
   flex-wrap: wrap
