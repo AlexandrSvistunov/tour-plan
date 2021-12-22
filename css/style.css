@@ -1589,22 +1589,73 @@ main {
   .footer {
     padding-top: 68px;
   }
-
-  .send-message__input {
+  .footer__grid-wrapper {
+    grid-row-gap: 0;
+    margin-bottom: 21px;
+  }
+  .footer__top-item {
+    margin-bottom: 32px;
+  }
+  .footer__title {
+    margin-bottom: 17px;
+  }
+  .footer__title--categories {
+    margin-bottom: 20px;
+  }
+  .footer__logo {
+    margin-bottom: 43px;
+  }
+  .footer__social {
+    margin-bottom: 32px;
+  }
+  .footer__social h4 {
+    margin-bottom: 23px;
+  }
+  .footer__categories {
+    margin-bottom: 41px;
+  }
+  .footer__contacts {
+    margin-bottom: 37px;
+  }
+  .footer__contacts-subtitle {
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+  .footer__contacts-icon {
+    margin-right: 6px;
+  }
+  .footer__contacts-item {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .footer__contacts-telephone p {
+    margin-bottom: 0;
+  }
+  .footer__contacts-text {
+    line-height: 21px;
+  }
+  .footer .send-message__input {
     margin-bottom: 14px;
   }
-  .send-message__text {
-    margin-bottom: 18px;
+  .footer .send-message__text {
+    margin-bottom: 17px;
   }
-  .send-message__send {
+  .footer .send-message__send {
     flex-wrap: wrap;
   }
-  .send-message__send span {
+  .footer .send-message__send span {
     order: -1;
     margin-bottom: 16px;
   }
-  .send-message #send {
+  .footer .send-message #send {
     width: 50%;
+  }
+  .footer__bottom-links {
+    margin-right: -9px;
+    line-height: 33px;
+  }
+  .footer__bottom-link {
+    margin-right: 9px;
   }
 }
 @media (max-width: 320px) {
