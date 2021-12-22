@@ -865,6 +865,9 @@ main {
   text-transform: uppercase;
   margin-bottom: 22px;
 }
+.footer__title--form {
+  margin-bottom: 37px;
+}
 .footer__top-links {
   font-size: 14px;
   line-height: 22px;
@@ -899,12 +902,14 @@ main {
   color: #BDBDBD;
   padding-top: 8px;
 }
-.footer__contacts-img-box {
-  width: 22px;
-  margin-right: 19px;
+.footer__contacts-icon {
+  width: 24px;
+  margin-right: 17px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .footer__contacts-subtitle {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 .footer__contacts-telephone p {
   margin-bottom: 8px;
@@ -912,7 +917,8 @@ main {
 .footer__contacts-item {
   display: flex;
   margin-left: 5px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
+  align-items: start;
 }
 .footer__contacts-item a {
   display: inline;
@@ -1090,6 +1096,7 @@ main {
   .footer__logo {
     grid-row: 1/2;
     margin-bottom: 12px;
+    width: 96px;
   }
   .footer__social {
     grid-row: 1/2;
@@ -1262,7 +1269,7 @@ main {
   }
   .footer__additional {
     min-width: 300px;
-    padding-left: 40px;
+    padding-left: 13.4%;
   }
   .footer__legal {
     padding-right: 10px;
@@ -1274,7 +1281,6 @@ main {
   }
   .footer__form {
     padding-top: 0;
-    margin-top: -4px;
   }
 }
 @media (max-width: 767px) {
@@ -1288,6 +1294,33 @@ main {
 
   .hotel__header-raiting {
     display: none;
+  }
+}
+@media (max-width: 745px) {
+  .footer__grid-wrapper {
+    grid-template-columns: 155px 1fr;
+  }
+  .footer__social {
+    padding-left: 0;
+  }
+  .footer__legal {
+    grid-row: 3;
+    padding-right: 0;
+    justify-self: start;
+    grid-column: span 2;
+  }
+  .footer__additional {
+    padding-left: 0;
+    min-width: 248px;
+    justify-self: end;
+  }
+  .footer__contacts {
+    padding-top: 0;
+    grid-row: 4;
+  }
+  .footer__form {
+    grid-row: 5;
+    margin-top: 0;
   }
 }
 @media (max-width: 660px) {
@@ -1388,12 +1421,38 @@ main {
   .reviews__swiper-button--next {
     right: 32px;
   }
-}
-@media (max-width: 450px) {
-  .send-message__contacts {
+
+  .footer__grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  .footer__logo {
+    margin-bottom: 0;
+  }
+  .footer__social {
+    grid-row: 2;
+  }
+  .footer__legal {
+    grid-row: 3;
+  }
+  .footer__additional {
+    grid-row: 4;
+    justify-self: start;
+  }
+  .footer__categories {
+    grid-row: 5;
+  }
+  .footer__contacts {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__form {
+    grid-row: 7;
+  }
+  .footer .send-message__contacts {
     flex-wrap: wrap;
   }
-  .send-message__input {
+  .footer .send-message__input {
     width: 100%;
   }
 }
@@ -1529,77 +1588,6 @@ main {
 
   .footer {
     padding-top: 68px;
-  }
-  .footer__logo {
-    margin-bottom: 42px;
-  }
-  .footer-title {
-    margin-bottom: 25px;
-  }
-  .footer-title--form {
-    margin-bottom: 17px;
-  }
-  .footer-title--nav {
-    margin-bottom: 17px;
-  }
-  .footer__wrapper {
-    margin-bottom: 31px;
-  }
-  .footer__nav-item:last-child {
-    order: -1;
-  }
-  .footer__nav-item:first-child {
-    order: 1;
-  }
-  .footer__aditional-information {
-    margin-bottom: 0;
-  }
-  .footer__top {
-    margin-bottom: 41px;
-  }
-  .footer__middle {
-    margin-bottom: 23px;
-  }
-  .footer__bottom-link {
-    margin-right: 10px;
-  }
-  .footer__bottom-links {
-    line-height: 31px;
-  }
-
-  .contacts {
-    margin-bottom: 31px;
-  }
-  .contacts__text {
-    padding-top: 0;
-  }
-  .contacts__subtitle {
-    line-height: 22px;
-    margin-bottom: 23px;
-  }
-  .contacts__item {
-    margin-left: 2px;
-    margin-bottom: 26px;
-  }
-  .contacts__img-box {
-    width: 24px;
-    margin-right: 8px;
-  }
-  .contacts__info {
-    width: 100%;
-    line-height: 22px;
-    margin-top: -4px;
-  }
-  .contacts__telephone {
-    width: 100%;
-    margin-top: -3px;
-  }
-  .contacts__telephone p {
-    line-height: 22px;
-    margin-bottom: 0;
-  }
-  .contacts__mail {
-    width: 100%;
   }
 
   .send-message__input {

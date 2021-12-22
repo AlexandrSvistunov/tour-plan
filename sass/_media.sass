@@ -82,6 +82,7 @@
     &__logo
       grid-row: 1/2
       margin-bottom: 12px
+      width: 96px
 
     &__social
       grid-row: 1/2
@@ -252,7 +253,7 @@
 
     &__additional
       min-width: 300px
-      padding-left: 40px
+      padding-left: 13.4%
 
     &__legal
       padding-right: 10px
@@ -264,8 +265,7 @@
 
     &__form
       padding-top: 0
-      margin-top: -4px
-   
+    
  
 @media (max-width: 767px)
   .search--header,.user--header,.header-nav 
@@ -276,6 +276,37 @@
 
   .hotel__header-raiting
     display: none
+
+
+@media (max-width: 745px)
+
+  .footer
+    &__grid-wrapper
+      grid-template-columns: 155px 1fr
+
+    &__social
+      padding-left: 0
+
+    &__legal
+      grid-row: 3
+      padding-right: 0
+      justify-self: start
+      grid-column: span 2
+
+    &__additional
+      padding-left: 0
+      min-width: 248px
+      justify-self: end
+
+
+    &__contacts
+      padding-top: 0
+      grid-row: 4
+
+    &__form
+      grid-row: 5
+      margin-top: 0
+
 
 
 @media (max-width: 660px)
@@ -352,6 +383,8 @@
       &-info
         padding: 25px 25px 20px 30px
 
+
+  
 @media (max-width: 576px)
 
   .activities
@@ -384,16 +417,42 @@
       &--next
         right: 32px
 
+  .footer
 
-@media (max-width: 450px)
+    &__grid-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
 
-  .send-message
+    &__logo
+      margin-bottom: 0
+
+    &__social
+      grid-row: 2
+
+    &__legal
+      grid-row: 3
+
+    &__additional
+      grid-row: 4
+      justify-self: start
+
+    &__categories
+      grid-row: 5
 
     &__contacts
-      flex-wrap: wrap
+      grid-row: 6
+      grid-column: 1
 
-    &__input
-      width: 100% 
+    &__form
+      grid-row: 7
+
+    .send-message
+
+      &__contacts
+        flex-wrap: wrap
+
+      &__input
+        width: 100%  
 
 
 @media (max-width: 400px)
@@ -529,73 +588,6 @@
   .footer
     padding-top: 68px
 
-    &__logo
-      margin-bottom: 42px
-
-    &-title
-      margin-bottom: 25px
-      &--form
-        margin-bottom: 17px
-      &--nav
-        margin-bottom: 17px
-
-    &__wrapper
-      margin-bottom: 31px
-
-    &__nav-item:last-child
-      order: -1
-    
-    &__nav-item:first-child
-      order: 1
-
-    &__aditional-information
-      margin-bottom: 0
-
-    &__top
-      margin-bottom: 41px
-
-    &__middle 
-      margin-bottom: 23px
-      
-    &__bottom-link
-      margin-right: 10px
-
-    &__bottom-links
-      line-height: 31px
-
-  .contacts
-    margin-bottom: 31px
-
-    &__text
-      padding-top: 0
-
-    &__subtitle
-      line-height: 22px
-      margin-bottom: 23px
-
-    &__item
-      margin-left: 2px
-      margin-bottom: 26px
-
-    &__img-box
-      width: 24px
-      margin-right: 8px
-
-    &__info
-      width: 100%
-      line-height: 22px
-      margin-top: -4px
-
-    &__telephone
-      width: 100%
-      margin-top: -3px
-
-      p
-        line-height: 22px
-        margin-bottom: 0
-
-    &__mail
-      width: 100%
 
   .send-message
 
