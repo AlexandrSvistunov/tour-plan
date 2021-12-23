@@ -188,21 +188,12 @@
         
 
 @media (max-width: 768px)
-  body
-    padding-top: 78px
-
+  
   .search--header
     width: 48.6%
 
   .header__top
     padding: 30px 0
-
-    &--fixed
-      position: fixed
-      left: 0
-      right: 0
-      top: 0
-      z-index: 99
 
   .header__logo
     width: 132px
@@ -282,17 +273,76 @@
     &__form
       padding-top: 4px
     
- 
+/********** Мобильное меню ***********/ 
 @media (max-width: 767px)
-  .search--header,.user--header,.header-nav 
+
+  body
+    padding-top: 74px
+
+  .search--header--desktop,.user--header--desktop,.header-nav 
     display: none
 
-  .header__menu-burger
-    display: flex
+  .search--header--mobile
+    width: 100%
 
-  .hotel__header-raiting
-    display: none
+    .search__input
+      padding-left: 22px
+      padding-right: 70px
 
+  .user--header--mobile
+    flex-direction: column
+    text-transform: none
+    margin-bottom: 22px
+
+    .user__img-box
+      margin-bottom: 5px
+
+  .header
+    &__menu-burger
+      display: flex
+
+    &__top
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+
+    &-nav
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 99
+      top: 74px
+
+      &--mobile
+        display: block
+        padding-top: 32px
+
+      &__mobile
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 35px
+
+      .header-nav__item
+        margin-right: 0
+
+      &__flex-box
+        flex-direction: column
+        align-items: center
+        margin-right: 0 
+
+      &__item
+        margin-bottom: 11px
+
+  .hotel
+    &__header-raiting
+      display: none
+
+ 
 
 @media (max-width: 745px)
 
@@ -472,13 +522,17 @@
 
 
 @media (max-width: 400px)
-  .header__top 
-    padding: 28px 0
+  .header
+    &__top 
+      padding: 28px 0
 
-  .header__logo
-    width: 98px
-    margin-right: 0
-    padding-bottom: 3px
+    &__logo
+      width: 98px
+      margin-right: 0
+      padding-bottom: 3px
+
+    &-nav
+      top: 69px
 
   .hotel
 

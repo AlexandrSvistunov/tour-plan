@@ -1,3 +1,5 @@
+// Подключаем parallax эффект
+
 $(window).scroll(function() {
     $('.subscribe').bgscroll({
         direction: 'bottom', // направление bottom или top
@@ -9,6 +11,8 @@ $(window).scroll(function() {
 
 });
 
+// 
+// Подключаем 1-й слайдер
 
 const hotelSwiper = new Swiper('.hotel__slider', {
     // Optional parameters
@@ -38,6 +42,7 @@ const hotelSwiper = new Swiper('.hotel__slider', {
 });
 
 
+// Подключаем 2-й слайдер
 
 const reviewsSwiper = new Swiper('.reviews-slider', {
     // Optional parameters
@@ -66,3 +71,9 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
     //  },
 });
 
+// Мобильное всплывающее меню
+
+var menuButton = document.querySelector(".menu-burger");
+menuButton.addEventListener("click", function() {
+    document.querySelector(".header-nav").classList.toggle("header-nav--mobile");
+});
