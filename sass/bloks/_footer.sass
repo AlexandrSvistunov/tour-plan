@@ -8,14 +8,15 @@
   
   &__grid-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: 204px 1fr 1fr
     grid-auto-rows: minmax(83px, min-content)
-    grid-column-gap: 30px
+    grid-column-gap: 20px
     grid-row-gap: 24px
     margin-bottom: 94px
 
   &__legal
-    padding-left: 60px
+    justify-self: end
+    padding-right: 5px
 
   &__logo
     width: 153px
@@ -24,6 +25,7 @@
 
   &__categories
     grid-row: 1/3
+    padding-left: 60px
 
   &__title
     font-weight: 700
@@ -65,7 +67,6 @@
 
   &__contacts
     padding-top: 21px
-    margin-left: -5px
     grid-column: span 2
 
 
@@ -90,6 +91,10 @@
  
       a
         display: inline
+
+    &-telephone
+      a
+        white-space: nowrap
 
   &__form
     padding-top: 9px
