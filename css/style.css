@@ -1342,6 +1342,7 @@ main {
   .header-nav--mobile {
     display: block;
     padding-top: 32px;
+    overflow: auto;
   }
   .header-nav__mobile {
     display: flex;
