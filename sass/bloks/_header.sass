@@ -65,6 +65,12 @@
     border-radius: 0 6px 6px 0
     cursor: pointer
 
+    &:hover
+      background-color: $hover-button
+
+    &:active
+      background-color: $active-button
+
     img
       width: 16px
 
@@ -104,7 +110,8 @@
     display: none
 
   &__item
-    margin-right: 2%  
+    margin-right: 2%
+    white-space: nowrap  
 
   &__flex-box
     display: flex

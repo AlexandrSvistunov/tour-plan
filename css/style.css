@@ -196,6 +196,12 @@ button {
   border-radius: 0 6px 6px 0;
   cursor: pointer;
 }
+.search__button:hover {
+  background-color: #c71134;
+}
+.search__button:active {
+  background-color: #f04e6d;
+}
 .search__button img {
   width: 16px;
 }
@@ -236,6 +242,7 @@ button {
 }
 .header-nav__item {
   margin-right: 2%;
+  white-space: nowrap;
 }
 .header-nav__flex-box {
   display: flex;
@@ -396,6 +403,12 @@ main {
   cursor: pointer;
   font-size: 14px;
   padding: 13px 0;
+}
+.booking__button:hover {
+  background-color: #c71134;
+}
+.booking__button:active {
+  background-color: #f04e6d;
 }
 .booking__map {
   background: url(../img/map-1440.jpg);
@@ -584,6 +597,12 @@ main {
   font-weight: 600;
   font-size: 14px;
   padding: 12px 26px;
+}
+.packages__card-button:hover {
+  background-color: #c71134;
+}
+.packages__card-button:active {
+  background-color: #f04e6d;
 }
 .packages__room {
   margin-bottom: 26px;
@@ -805,6 +824,12 @@ main {
   bottom: 23px;
   left: 26px;
 }
+.activities__item-button:hover {
+  background-color: #c71134;
+}
+.activities__item-button:active {
+  background-color: #f04e6d;
+}
 .activities__item {
   position: relative;
   flex-basis: 255px;
@@ -881,6 +906,24 @@ main {
   line-height: 22px;
   color: #BDBDBD;
 }
+.footer__top-link {
+  display: inline;
+  position: relative;
+}
+.footer__top-link:hover::after {
+  transform: scaleX(1);
+}
+.footer__top-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #BDBDBD;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
 .footer__social {
   display: flex;
   flex-wrap: wrap;
@@ -926,8 +969,23 @@ main {
 .footer__contacts-item a {
   display: inline;
 }
-.footer__contacts-telephone a {
+.footer__contacts-link {
   white-space: nowrap;
+  position: relative;
+}
+.footer__contacts-link:hover::after {
+  transform: scaleX(1);
+}
+.footer__contacts-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #BDBDBD;
+  transform: scaleX(0);
+  transition: transform 0.25s;
 }
 .footer__form {
   padding-top: 9px;
@@ -1342,7 +1400,7 @@ main {
   .header-nav--mobile {
     display: block;
     padding-top: 32px;
-    overflow: auto;
+    overflow-y: auto;
   }
   .header-nav__mobile {
     display: flex;
