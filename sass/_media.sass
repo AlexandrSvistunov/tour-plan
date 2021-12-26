@@ -126,6 +126,112 @@
     width: 100%
 
 
+/********** Interaktive ***********/
+@media (min-width: 992px)
+  .search
+    &__button
+      &:hover
+        background-color: $hover-button
+
+      &:active
+        background-color: $active-button
+
+  .booking
+    &__button
+      &:hover
+        background-color: $hover-button
+
+      &:active
+        background-color: $active-button
+
+  .bread-crumbs
+    &__item
+
+      &:hover
+        color: $bread-crumbs-link-color
+
+      &:active
+        color: $primary-color
+
+      &:hover::before
+        transform: scaleX(1)
+
+      &::before
+        position: absolute
+        bottom: 0
+        content: ''
+        width: 90%
+        height: 1px
+        background-color: $bread-crumbs-link-color
+        transform: scaleX(0)
+        transition: transform 0.25s
+        
+      &:active::before
+        display: none
+
+  
+  .packages
+    &__card
+      &-button
+        &:hover
+          background-color: $hover-button
+
+        &:active
+          background-color: $active-button
+
+
+
+  .activities
+    &__item-button
+      &:hover
+        background-color: $hover-button
+
+      &:active
+        background-color: $active-button
+
+
+
+  .footer
+    &__top-link
+      &:hover
+        &::after
+          transform: scaleX(1)
+
+      &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        content: ""
+        width: 100%
+        height: 1px
+        background-color: #BDBDBD
+        transform: scaleX(0)
+        transition: transform 0.25s
+
+    &__contacts
+      &-link
+        &:hover
+          &::after
+            transform: scaleX(1)
+
+        &::after
+          position: absolute
+          bottom: 0
+          left: 0
+          content: ""
+          width: 100%
+          height: 1px
+          background-color: #BDBDBD
+          transform: scaleX(0)
+          transition: transform 0.25s
+
+    .button-submit
+      &:hover
+        background-color: $hover-button
+
+      &:active
+        background-color: $active-button
+
 @media (max-width: 992px)
 
   .container

@@ -10,32 +10,9 @@
     margin-right: 3px
     position: relative
 
-    
-    &:hover
-      color: $bread-crumbs-link-color
-
-    &:active
-      color: $primary-color
-
     &::after
       content: '/'
       margin-left: 2px
-
-    &:hover::before
-      transform: scaleX(1)
-    
-    &::before
-      position: absolute
-      bottom: 0
-      content: ''
-      width: 90%
-      height: 1px
-      background-color: $bread-crumbs-link-color
-      transform: scaleX(0)
-      transition: transform 0.25s
-      
-    &:active::before
-      display: none
 
 .active
   color: $primary-color
