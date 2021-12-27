@@ -417,9 +417,9 @@
                 <h2 class="subscribe__title">
                     subscribe to our<br /><span>Newsletter</span>
                 </h2>
-                <form action="#" class="search send-form">
-                    <input type="text" class="search__input email-input" placeholder="Your email address" />
-                    <button class="search__button send-button">Send</button>
+                <form action="send.php" method="post" class="search send-form">
+                    <input type="text" class="search__input email-input" placeholder="Your email address" name="email" />
+                    <input type="submit" class="search__button send-button" value="Send" />
                 </form>
             </div>
             <!-- /.subscribe__wrapper -->
@@ -689,23 +689,25 @@
           <!-- /.contacts -->
           <div class="footer__form">
             <h4 class="footer__title footer__title--form">Send us a message</h4>
-            <form action="#" class="send-message">
+            <form action="send.php" method="POST" class="send-message">
               <fieldset class="send-message__contacts">
                 <input
                   type="text"
                   class="send-message__input"
                   placeholder="Your Full Name*"
+                  name="name"
                 />
                 <input
                   type="text"
                   class="send-message__input"
                   placeholder="Phone Number*"
+                  name="phone"
                 />
               </fieldset>
               <!-- /.send-message__contacts -->
               <textarea
                 class="send-message__text"
-                name="#"
+                name="message"
                 id="#"
                 placeholder="Message"
               ></textarea>
