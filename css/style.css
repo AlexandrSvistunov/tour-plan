@@ -288,7 +288,8 @@ main {
   justify-content: space-between;
   margin-bottom: 21px;
 }
-.hotel__header h2 {
+.hotel__header-title {
+  font-size: 24px;
   margin-right: 14px;
   text-transform: uppercase;
 }
@@ -1007,6 +1008,32 @@ main {
   display: none;
 }
 
+/**********Thankyou***********/
+.dispatch-message {
+  font-size: 30px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.dispatch-message-home {
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  padding: 12px 0;
+}
+
+.dispatch-message-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /******* Media **********/
 @media (max-width: 1430px) {
   .container {
@@ -1139,6 +1166,13 @@ main {
     background-color: #c71134;
   }
   .booking__button:active {
+    background-color: #f04e6d;
+  }
+
+  .dispatch-message-home:hover {
+    background-color: #c71134;
+  }
+  .dispatch-message-home:active {
     background-color: #f04e6d;
   }
 
@@ -1508,6 +1542,10 @@ main {
   .packages__card-info--big {
     padding: 25px 25px 20px 30px;
   }
+
+  .dispatch-message {
+    font-size: 25px;
+  }
 }
 @media (max-width: 630px) {
   .packages .stars {
@@ -1596,6 +1634,23 @@ main {
   }
   .footer .send-message__input {
     width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .hotel__header-info--thankyou {
+    width: 100%;
+  }
+
+  .dispatch-message-info {
+    font-size: 14px;
+  }
+  .dispatch-message-info span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .dispatch-message {
+    font-size: 20px;
   }
 }
 @media (max-width: 400px) {
