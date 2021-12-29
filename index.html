@@ -24,7 +24,8 @@
                 <form action="#" class="search search--header search--header--desktop">
                     <input type="text" class="search__input" placeholder="Search Location" />
                     <button class="search__button">
-                    <img src="img/svg/search.svg" alt="Icon: search"/></button>
+              <img src="img/svg/search.svg" alt="Icon: search" />
+            </button>
                 </form>
                 <!-- / form .search -->
                 <a href="#" class="user user--header user--header--desktop">
@@ -60,7 +61,8 @@
                             <form action="#" class="search search--header search--header--mobile">
                                 <input type="text" class="search__input" placeholder="Search Location" />
                                 <button class="search__button">
-                            <img src="img/svg/search.svg" alt="Icon: search"/></button>
+                    <img src="img/svg/search.svg" alt="Icon: search" />
+                  </button>
                             </form>
                             <!-- / form .search -->
                         </li>
@@ -183,7 +185,7 @@
                                 </p>
                             </div>
                             <!-- /.booking__quick -->
-                            <button class="booking__button">View Other Options</button>
+                            <button data-toggle="modal" class="booking__button">View Other Options</button>
                             <!-- /.booking-button -->
                         </div>
                         <!-- /.booking__box -->
@@ -584,7 +586,9 @@
                     <img src="img/svg/footer-logo.svg" alt="Logo: Best Tour Plan" />
                 </a>
                 <div class="footer__top-item footer__categories">
-                    <h4 class="footer__title footer__title--categories">ALL CATEGORIES</h4>
+                    <h4 class="footer__title footer__title--categories">
+                        ALL CATEGORIES
+                    </h4>
                     <ul class="footer__top-links">
                         <li><a class="footer__top-link" href="#">All Deals</a></li>
                         <li><a class="footer__top-link" href="#">Hotels</a></li>
@@ -651,7 +655,9 @@
             <!-- /.footer-top-item -->
 
             <div class="footer__contacts">
-                <h4 class="footer__title footer__title--contacts">Contact Details</h4>
+                <h4 class="footer__title footer__title--contacts">
+                    Contact Details
+                </h4>
                 <div class="footer__contacts-text">
                     <p class="footer__contacts-subtitle">
                         Feel free to contact us by phone, email or by our contact form
@@ -666,22 +672,39 @@
                         <img class="footer__contacts-icon" src="img/svg/footer-phone-call.svg" alt="Phone" width="23" height="23" />
                         <div class="footer__contacts-telephone">
                             <p>
-                                Tel (business hours) : <a class="footer__contacts-link" href="tel:2691500">269&nbsp;1500</a>
-                            </p>
-                            <p>
-                                Tel (hotline) Monday - Saturday:
-                                <a class="footer__contacts-link" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
-                            </p>
-                            <p>
-                                Tel (hotline) Sunday:
-                                <a class="footer__contacts-link" href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.contacts__item -->
-                    <div class="footer__contacts-item">
-                        <img class="footer__contacts-icon icon-mail" src="img/svg/email.svg" alt="Email" width="20" height="20" />
-                        <a class="footer__contacts-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a
+                                Tel (business hours) :
+                                <a class="footer__contacts-link" href="tel:2691500">269&nbsp;1500</a
+                    >
+                  </p>
+                  <p>
+                    Tel (hotline) Monday - Saturday:
+                    <a class="footer__contacts-link" href="tel:52566138"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 20:00 pm)
+                  </p>
+                  <p>
+                    Tel (hotline) Sunday:
+                    <a class="footer__contacts-link" href="tel:52566138"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 14:00 pm)
+                  </p>
+                </div>
+              </div>
+              <!-- /.contacts__item -->
+              <div class="footer__contacts-item">
+                <img
+                  class="footer__contacts-icon icon-mail"
+                  src="img/svg/email.svg"
+                  alt="Email"
+                  width="20"
+                  height="20"
+                />
+                <a
+                  class="footer__contacts-link"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
                 >
               </div>
             </div>
@@ -724,17 +747,40 @@
         <div class="footer__bottom">
           <p class="footer__bottom-links">
             <a class="footer__bottom-link" href="#">Disclaimer</a>
-                        <a class="footer__bottom-link" href="#">Conditions of use</a>
-                        <a class="footer__bottom-link" href="#">Cancellation policy</a>
-                        </p>
-                        <img src="img/payment.png" class="footer__bottom-payment" alt="Payment" />
+                                <a class="footer__bottom-link" href="#">Conditions of use</a>
+                                <a class="footer__bottom-link" href="#">Cancellation policy</a>
+                            </p>
+                            <img src="img/payment.png" class="footer__bottom-payment" alt="Payment" />
+                        </div>
+                        <!-- /.footer-bottom -->
                     </div>
-                    <!-- /.footer-bottom -->
-                </div>
-                <!-- /.footer-container -->
+                    <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
     <!-- Modals -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <!-- Booking-modal -->
+        <div class="booking-modal">
+            <button class="booking-modal__close">
+          <img src="img/svg/close.svg" alt="Close" />
+        </button>
+            <h3 class="booking-modal__title">Booking</h3>
+            <form action="send.php" method="POST" class="booking-form" name="booking-form">
+                <input class="booking-form__input" type="text" placeholder="Your Full Name*" name="name" />
+                <input class="booking-form__input" type="text" placeholder="Phone Number*" name="phone" />
+                <input class="booking-form__input" type="email" placeholder="Email*" name="email" />
+                <textarea class="booking-form__message" placeholder="Message" name="message"></textarea>
+                <fieldset class="booking-modal__footer">
+                    <input class="booking-modal__submit" type="submit" value="Send" />
+                    <p>* Required Fields</p>
+                </fieldset>
+            </form>
+            <!-- /.booking-form -->
+        </div>
+        <!-- /.booking-modal -->
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bgscroll.js"></script>

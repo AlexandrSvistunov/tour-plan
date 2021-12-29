@@ -129,7 +129,7 @@
 /********** Interaktive ***********/
 @media (min-width: 992px)
   .search
-    &__button
+    &__button    
       &:hover
         background-color: $hover-button
 
@@ -137,7 +137,8 @@
         background-color: $active-button
 
   .booking
-    &__button
+    &__button,
+    &-modal__submit
       &:hover
         background-color: $hover-button
 
@@ -584,6 +585,15 @@
   .booking
     width: 100%
 
+  .modal
+
+    .booking-modal
+      padding-right: 12vw
+      padding-left: 12vw
+
+    .booking-form
+      min-width: 70vw  
+
   .reviews  
 
     &__guest-text
@@ -635,11 +645,29 @@
         flex-wrap: wrap
 
       &__input
-        width: 100%  
+        width: 100% 
+
+   
 
 @media (max-width: 490px)
   .hotel__header-info--thankyou
     width: 100%
+
+  .modal
+
+    .booking
+      &-modal
+        padding-right: 8vw
+        padding-left: 8vw
+
+        &__footer
+          flex-wrap: wrap
+
+        &__submit
+          width: 100%
+          margin-bottom: 15px
+
+     
 
   .dispatch-message-info
     font-size: 14px
