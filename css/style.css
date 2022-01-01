@@ -1648,6 +1648,7 @@ main {
     padding-right: 8vw;
     padding-left: 8vw;
     top: 5%;
+    height: 515px;
   }
   .modal .booking-modal__footer {
     flex-wrap: wrap;
