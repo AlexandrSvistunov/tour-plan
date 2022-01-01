@@ -1647,6 +1647,7 @@ main {
   .modal .booking-modal {
     padding-right: 8vw;
     padding-left: 8vw;
+    top: 5%;
   }
   .modal .booking-modal__footer {
     flex-wrap: wrap;
@@ -1905,13 +1906,16 @@ main {
   border-radius: 8px;
   padding: 35px 88px 33px 88px;
   position: fixed;
-  top: 150px;
+  top: 10%;
+  margin-top: -15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 110;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  height: 487px;
+  overflow-y: auto;
 }
 .booking-modal--visible {
   visibility: visible;
@@ -1962,7 +1966,11 @@ main {
   margin-bottom: 15px;
   padding: 24px;
 }
-.booking-form__input::-moz-placeholder, .booking-form__input::-webkit-input-placeholder {
+.booking-form__input::-moz-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.booking-form__input::-webkit-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }
@@ -1973,7 +1981,11 @@ main {
   overflow: auto;
   resize: none;
 }
-.booking-form__message::-webkit-input-placeholder, .booking-form__message::-moz-placeholder {
+.booking-form__message::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.booking-form__message::-moz-placeholder {
   font-size: 12px;
   color: #BDBDBD;
 }/*# sourceMappingURL=style.css.map */

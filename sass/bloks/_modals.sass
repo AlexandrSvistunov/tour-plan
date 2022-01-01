@@ -26,13 +26,16 @@
     border-radius: 8px
     padding: 35px 88px 33px 88px
     position: fixed
-    top: 150px
+    top: 10%
+    margin-top: -15px
     left: 50%
     transform: translateX(-50%)
     z-index: 110
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    height: 487px
+    overflow-y: auto
     
     &--visible
       visibility: visible
@@ -76,7 +79,7 @@
     min-width: 302px
 
     &__input,
-    &__message 
+    &__message
       width: 100%
       border-radius: 4px
 
@@ -85,10 +88,11 @@
       margin-bottom: 15px
       padding: 24px
       
-    &__input::-moz-placeholder,
+    &__input::-moz-placeholder
+      +form-style
+
     &__input::-webkit-input-placeholder 
-      font-size: 12px
-      color: #BDBDBD
+      +form-style
 
     &__message 
       padding: 18px 22px
@@ -97,10 +101,11 @@
       overflow: auto
       resize: none
 
-    &__message::-webkit-input-placeholder,
+    &__message::-webkit-input-placeholder
+      +form-style
+
     &__message::-moz-placeholder 
-      font-size: 12px
-      color: #BDBDBD
+      +form-style
 
 
 
