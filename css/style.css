@@ -129,6 +129,10 @@ button {
   border-radius: 3px;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /********** Header ***********/
 .header__menu-burger {
   display: none;
@@ -821,6 +825,7 @@ main {
   padding-top: 108px;
   padding-bottom: 47px;
   /**********Footer-contacts***********/
+  /**********Send-message***********/
 }
 .footer__grid-wrapper {
   display: grid;
@@ -921,6 +926,9 @@ main {
 .footer-title--form {
   margin-bottom: 36px;
 }
+.footer__iput-group {
+  width: 47%;
+}
 .footer .send-message {
   width: 100%;
 }
@@ -937,8 +945,7 @@ main {
 .footer .send-message__input {
   border-radius: 4px;
   padding: 15px 23px;
-  margin-bottom: 13px;
-  width: 47%;
+  width: 100%;
 }
 .footer .send-message__input::-moz-placeholder {
   font-size: 12px;
@@ -955,6 +962,7 @@ main {
   padding: 18px 20px;
   resize: none;
   margin-bottom: 24px;
+  margin-top: 13px;
 }
 .footer .send-message__text::-moz-placeholder {
   font-size: 12px;
@@ -1632,11 +1640,11 @@ main {
   .footer__form {
     grid-row: 7;
   }
+  .footer__iput-group {
+    width: 100%;
+  }
   .footer .send-message__contacts {
     flex-wrap: wrap;
-  }
-  .footer .send-message__input {
-    width: 100%;
   }
 }
 @media (max-width: 490px) {
@@ -1647,8 +1655,6 @@ main {
   .modal .booking-modal {
     padding-right: 8vw;
     padding-left: 8vw;
-    top: 5%;
-    height: 515px;
   }
   .modal .booking-modal__footer {
     flex-wrap: wrap;
@@ -1853,10 +1859,14 @@ main {
   .footer__contacts-text {
     line-height: 21px;
   }
-  .footer .send-message__input {
-    margin-bottom: 14px;
+  .footer__iput-group {
+    margin-top: 14px;
+  }
+  .footer__iput-group:first-child {
+    margin-top: 0;
   }
   .footer .send-message__text {
+    margin-top: 14px;
     margin-bottom: 17px;
   }
   .footer .send-message__send {
@@ -1880,6 +1890,11 @@ main {
 @media (max-width: 320px) {
   .activities__item {
     background-position-x: -31px;
+  }
+}
+@media (max-height: 550px) {
+  .booking-modal {
+    height: 100%;
   }
 }
 /*******Modals************/
@@ -1907,16 +1922,15 @@ main {
   border-radius: 8px;
   padding: 35px 88px 33px 88px;
   position: fixed;
-  top: 10%;
-  margin-top: -15px;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 110;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
-  height: 487px;
   overflow-y: auto;
+  max-width: 478px;
 }
 .booking-modal--visible {
   visibility: visible;
@@ -1964,7 +1978,7 @@ main {
 }
 .booking-form__input {
   height: 50px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 24px;
 }
 .booking-form__input::-moz-placeholder {
@@ -1978,6 +1992,7 @@ main {
 .booking-form__message {
   padding: 18px 22px;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 16px;
   overflow: auto;
   resize: none;

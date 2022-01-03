@@ -639,13 +639,13 @@
     &__form
       grid-row: 7
 
+    &__iput-group
+      width: 100%
+
     .send-message
 
       &__contacts
         flex-wrap: wrap
-
-      &__input
-        width: 100% 
 
    
 
@@ -659,10 +659,7 @@
       &-modal
         padding-right: 8vw
         padding-left: 8vw
-        top: 5%
-        height: 515px
-        
-
+       
         &__footer
           flex-wrap: wrap
 
@@ -868,13 +865,17 @@
       &-text
         line-height: 21px
 
+    &__iput-group
+      margin-top: 14px
+      &:first-child
+        margin-top: 0
+
+
 
     .send-message
-
-      &__input
-        margin-bottom: 14px
-
+        
       &__text
+        margin-top: 14px
         margin-bottom: 17px
 
       &__send
@@ -899,3 +900,8 @@
   .activities
     &__item
         background-position-x: -31px
+
+@media (max-height: 550px)
+  .booking-modal
+    height: 100%
+     

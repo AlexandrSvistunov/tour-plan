@@ -26,17 +26,16 @@
     border-radius: 8px
     padding: 35px 88px 33px 88px
     position: fixed
-    top: 10%
-    margin-top: -15px
+    top: 5%
     left: 50%
     transform: translateX(-50%)
     z-index: 110
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
-    height: 487px
     overflow-y: auto
-    
+    max-width: 478px
+       
     &--visible
       visibility: visible
       opacity: 1
@@ -85,7 +84,7 @@
 
     &__input 
       height: 50px
-      margin-bottom: 15px
+      margin-top: 15px
       padding: 24px
       
     &__input::-moz-placeholder
@@ -97,6 +96,7 @@
     &__message 
       padding: 18px 22px
       min-height: 123px
+      margin-top: 15px
       margin-bottom: 16px
       overflow: auto
       resize: none

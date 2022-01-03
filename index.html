@@ -185,7 +185,9 @@
                                 </p>
                             </div>
                             <!-- /.booking__quick -->
-                            <button data-toggle="modal" class="booking__button">View Other Options</button>
+                            <button data-toggle="modal" class="booking__button">
+                  View Other Options
+                </button>
                             <!-- /.booking-button -->
                         </div>
                         <!-- /.booking__box -->
@@ -420,7 +422,7 @@
                     subscribe to our<br /><span>Newsletter</span>
                 </h2>
                 <form action="send.php" method="post" class="search send-form">
-                    <input type="email" class="search__input email-input" placeholder="Your email address" name="email" />
+                    <input type="email" class="search__input email-input" placeholder="Your email address" name="email" required />
                     <input type="submit" class="search__button send-button" value="Send" />
                 </form>
             </div>
@@ -712,20 +714,33 @@
           <!-- /.contacts -->
           <div class="footer__form">
             <h4 class="footer__title footer__title--form">Send us a message</h4>
-            <form action="send.php" method="POST" class="send-message">
+            <form
+              action="send.php"
+              method="POST"
+              class="send-message validate-form"
+            >
               <fieldset class="send-message__contacts">
-                <input
-                  type="text"
-                  class="send-message__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  type="tel"
-                  class="send-message__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+                <div class="footer__iput-group">
+                  <input
+                    type="text"
+                    class="send-message__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <!-- /.footer__iput-group -->
+                <div class="footer__iput-group">
+                    <input
+                      type="tel"
+                      class="send-message__input mask-phone"
+                      placeholder="Phone Number*"
+                      name="phone"
+                      required
+                    />
+                </div>
+                <!-- /.footer__iput-group -->
               </fieldset>
               <!-- /.send-message__contacts -->
               <textarea
@@ -767,10 +782,10 @@
           <img src="img/svg/close.svg" alt="Close" />
         </button>
             <h3 class="booking-modal__title">Booking</h3>
-            <form action="send.php" method="POST" class="booking-form" name="booking-form">
-                <input class="booking-form__input" type="text" placeholder="Your Full Name*" name="name" />
-                <input class="booking-form__input" type="tel" placeholder="Phone Number*" name="phone" />
-                <input class="booking-form__input" type="email" placeholder="Email*" name="email" />
+            <form action="send.php" method="POST" class="booking-form validate-form" name="booking-form">
+                <input class="booking-form__input" type="text" placeholder="Your Full Name*" name="name" required minlength="2" />
+                <input class="booking-form__input mask-phone" type="tel" placeholder="Phone Number*" name="phone" required />
+                <input class="booking-form__input" type="email" placeholder="Email*" name="email" required />
                 <textarea class="booking-form__message" placeholder="Message" name="message"></textarea>
                 <fieldset class="booking-modal__footer">
                     <input class="booking-modal__submit" type="submit" value="Send" />
@@ -785,6 +800,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bgscroll.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></>

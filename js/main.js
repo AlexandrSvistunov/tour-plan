@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Подключаем parallax эффект
+    // **************Подключаем parallax эффект***********
 
     $(window).scroll(function() {
         $(".subscribe").bgscroll({
@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
 
     //
-    // Подключаем 1-й слайдер
+    // ****************Подключаем 1-й слайдер*************
 
     const hotelSwiper = new Swiper(".hotel__slider", {
         // Optional parameters
@@ -42,7 +42,7 @@ $(document).ready(function() {
         //  },
     });
 
-    // Подключаем 2-й слайдер
+    // **************Подключаем 2-й слайдер*************
 
     const reviewsSwiper = new Swiper(".reviews-slider", {
         // Optional parameters
@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
 
 
-    // Мобильное всплывающее меню
+    // **************Мобильное всплывающее меню********
 
     var menuButton = document.querySelector(".menu-burger");
     menuButton.addEventListener("click", function() {
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 
 
-    // Модальное всплывающее окно
+    // ********Модальное всплывающее окно*********
 
     var modalButtton = $("[data-toggle=modal]"); // Ищем кнопку вызова окна
     var closeModalButtton = $(".booking-modal__close"); // Ищем крестик close
@@ -116,4 +116,33 @@ $(document).ready(function() {
             closeModal();
         }
     });
+
+
+
+    // *************Валидация форм*************
+
+    // Валидация модального окна-формы
+    $('.validate-form').each(function() {
+        $(this).validate({
+
+            errorClass: "invalid",
+
+            messages: {
+                name: {
+                    required: "Please enter a name",
+                    minlength: "Your name must be at least 2 characters"
+                },
+                phone: "Phone is required",
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        })
+
+    });
+
+
+    // *************Валидация телефона*************
+    $(".mask-phone").mask("+7 (999) 999 - 9999");
 });
