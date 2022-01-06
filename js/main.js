@@ -144,5 +144,5 @@ $(document).ready(function() {
 
 
     // *************Валидация телефона*************
-    $(".mask-phone").mask("+7 (999) 999 - 9999");
+    $(".mask-phone").mask("+7 (999) 999 - 9999", { autoclear: false });
 });

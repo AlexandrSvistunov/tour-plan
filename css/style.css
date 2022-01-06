@@ -614,7 +614,6 @@ main {
   padding: 0 13.1%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .email-input {
@@ -633,12 +632,18 @@ main {
 
 .send-form {
   width: 350px;
+  margin-top: 8px;
 }
 
 .send-button {
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
+  height: 55px;
+}
+
+.search__input-group {
+  width: 100%;
 }
 
 /*******Reviews************/
@@ -1618,6 +1623,10 @@ main {
 
   .subscribe__title {
     margin-bottom: 37px;
+  }
+
+  .send-form {
+    margin-top: 0;
   }
 }
 @media (max-width: 650px) {

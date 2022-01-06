@@ -421,9 +421,11 @@
                 <h2 class="subscribe__title">
                     subscribe to our<br /><span>Newsletter</span>
                 </h2>
-                <form action="send.php" method="post" class="search send-form">
-                    <input type="email" class="search__input email-input" placeholder="Your email address" name="email" required />
-                    <input type="submit" class="search__button send-button" value="Send" />
+                <form action="send.php" method="post" class="search send-form validate-form">
+                    <div class="search__input-group">
+                        <input type="email" class="search__input email-input" placeholder="Your email address" name="email" required />
+                        <input type="submit" class="search__button send-button" value="Send" />
+                    </div>
                 </form>
             </div>
             <!-- /.subscribe__wrapper -->
