@@ -12,7 +12,11 @@ $(document).ready(function() {
         });
     });
 
-    //
+
+    // ************* Анимация*************
+    AOS.init();
+
+
     // ****************Подключаем 1-й слайдер*************
 
     const hotelSwiper = new Swiper(".hotel__slider", {
@@ -146,7 +150,5 @@ $(document).ready(function() {
     // *************Валидация телефона*************
     $(".mask-phone").mask("+7 (999) 999 - 9999", { autoclear: false });
 
-    // *************AOS анимация*************
 
-    AOS.init();
 });
