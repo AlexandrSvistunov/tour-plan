@@ -151,7 +151,7 @@ $(document).ready(function() {
 
 
     // *************Валидация телефона*************
-    $(".mask-phone").inputmask("+7(999)999-9999", { autoclear: false });
+    $(".mask-phone").inputmask("+7(999)999-9999");
 
     // добавляем правило для валидации телефона
     $.validator.addMethod("checkMaskPhone", function(value, element) {
