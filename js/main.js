@@ -136,7 +136,10 @@ $(document).ready(function() {
                     required: "Please enter a name",
                     minlength: "Your name must be at least 2 characters"
                 },
-                phone: "Phone is required",
+                phone: {
+                    required: "Enter your phone number",
+                    minlength: "Your number must be at least 10 digits"
+                },
                 email: {
                     required: "We need your email address to contact you",
                     email: "Your email address must be in the format of name@domain.com"
@@ -148,7 +151,20 @@ $(document).ready(function() {
 
 
     // *************Валидация телефона*************
-    $(".mask-phone").mask("+7 (999) 999 - 9999", { autoclear: false });
+    $(".mask-phone").inputmask("+7(999)999-9999", { autoclear: false });
+
+    // добавляем правило для валидации телефона
+    $.validator.addMethod("checkMaskPhone", function(value, element) {
+        return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+    }, "Your number must be at least 10 digits");
+
+
+    // Вешаем валидацию на поле с телефоном по классу
+    $.validator.addClassRules({
+        'mask-phone': {
+            checkMaskPhone: true,
+        }
+    });
 
 
 });
