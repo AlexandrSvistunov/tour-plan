@@ -120,19 +120,19 @@
                                 <img src="img/hotel-slider-img-1.jpg" alt="Hotel image" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/hotel-slider-img-2.jpg" alt="Hotel image" />
+                                <img src="img/hotel-slider-img-2.jpg" alt="Hotel image" loading="lazy" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/hotel-slider-img-3.jpg" alt="Hotel image" />
+                                <img src="img/hotel-slider-img-3.jpg" alt="Hotel image" loading="lazy" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/hotel-slider-img-4.jpg" alt="Hotel image" />
+                                <img src="img/hotel-slider-img-4.jpg" alt="Hotel image" loading="lazy" />
                             </div>
                             <div class="swiper-slide">
                                 <img src="img/hotel-slider-img-5.jpg" alt="Hotel image" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/hotel-slider-img-6.jpg" alt="Hotel image" />
+                                <img src="img/hotel-slider-img-6.jpg" alt="Hotel image" loading="lazy" />
                             </div>
                         </div>
 
@@ -143,7 +143,7 @@
                     <!-- ./ swiper container -->
 
                     <div class="booking">
-                        <div class="booking__card">
+                        <div class="booking__card" data-aos="flip-left">
                             <div class="booking-info">
                                 <div class="booking-info__left">
                                     <span>price starts as</span>
@@ -172,7 +172,9 @@
                                 </p>
                             </div>
                             <!-- /.booking__quick -->
-                            <button class="booking__button">View Other Options</button>
+                            <button data-toggle="modal" class="booking__button">
+                  View Other Options
+                </button>
                             <!-- /.booking-button -->
                         </div>
                         <!-- /.booking__box -->
@@ -198,11 +200,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__grid-wrapper">
-                <a href="index.html" class="footer__logo">
+                <a href="index.html" class="footer__logo" data-aos="fade-right">
                     <img src="img/svg/footer-logo.svg" alt="Logo: Best Tour Plan" />
                 </a>
                 <div class="footer__top-item footer__categories">
-                    <h4 class="footer__title footer__title--categories">ALL CATEGORIES</h4>
+                    <h4 class="footer__title footer__title--categories">
+                        ALL CATEGORIES
+                    </h4>
                     <ul class="footer__top-links">
                         <li><a class="footer__top-link" href="#">All Deals</a></li>
                         <li><a class="footer__top-link" href="#">Hotels</a></li>
@@ -269,7 +273,9 @@
             <!-- /.footer-top-item -->
 
             <div class="footer__contacts">
-                <h4 class="footer__title footer__title--contacts">Contact Details</h4>
+                <h4 class="footer__title footer__title--contacts">
+                    Contact Details
+                </h4>
                 <div class="footer__contacts-text">
                     <p class="footer__contacts-subtitle">
                         Feel free to contact us by phone, email or by our contact form
@@ -284,22 +290,39 @@
                         <img class="footer__contacts-icon" src="img/svg/footer-phone-call.svg" alt="Phone" width="23" height="23" />
                         <div class="footer__contacts-telephone">
                             <p>
-                                Tel (business hours) : <a class="footer__contacts-link" href="tel:2691500">269&nbsp;1500</a>
-                            </p>
-                            <p>
-                                Tel (hotline) Monday - Saturday:
-                                <a class="footer__contacts-link" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
-                            </p>
-                            <p>
-                                Tel (hotline) Sunday:
-                                <a class="footer__contacts-link" href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.contacts__item -->
-                    <div class="footer__contacts-item">
-                        <img class="footer__contacts-icon icon-mail" src="img/svg/email.svg" alt="Email" width="20" height="20" />
-                        <a class="footer__contacts-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a
+                                Tel (business hours) :
+                                <a class="footer__contacts-link" href="tel:2691500">269&nbsp;1500</a
+                    >
+                  </p>
+                  <p>
+                    Tel (hotline) Monday - Saturday:
+                    <a class="footer__contacts-link" href="tel:52566138"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 20:00 pm)
+                  </p>
+                  <p>
+                    Tel (hotline) Sunday:
+                    <a class="footer__contacts-link" href="tel:52566138"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 14:00 pm)
+                  </p>
+                </div>
+              </div>
+              <!-- /.contacts__item -->
+              <div class="footer__contacts-item">
+                <img
+                  class="footer__contacts-icon icon-mail"
+                  src="img/svg/email.svg"
+                  alt="Email"
+                  width="20"
+                  height="20"
+                />
+                <a
+                  class="footer__contacts-link"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
                 >
               </div>
             </div>
@@ -307,20 +330,33 @@
           <!-- /.contacts -->
           <div class="footer__form">
             <h4 class="footer__title footer__title--form">Send us a message</h4>
-            <form action="send.php" method="POST" class="send-message">
+            <form
+              action="send.php"
+              method="POST"
+              class="send-message validate-form"
+            >
               <fieldset class="send-message__contacts">
-                <input
-                  type="text"
-                  class="send-message__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  type="text"
-                  class="send-message__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+                <div class="footer__iput-group">
+                  <input
+                    type="text"
+                    class="send-message__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <!-- /.footer__iput-group -->
+                <div class="footer__iput-group">
+                  <input
+                    type="tel"
+                    class="send-message__input mask-phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-- /.footer__iput-group -->
               </fieldset>
               <!-- /.send-message__contacts -->
               <textarea
@@ -342,26 +378,47 @@
         <div class="footer__bottom">
           <p class="footer__bottom-links">
             <a class="footer__bottom-link" href="#">Disclaimer</a>
-                        <a class="footer__bottom-link" href="#">Conditions of use</a>
-                        <a class="footer__bottom-link" href="#">Cancellation policy</a>
-                        </p>
-                        <img src="img/payment.png" class="footer__bottom-payment" alt="Payment" />
+                                <a class="footer__bottom-link" href="#">Conditions of use</a>
+                                <a class="footer__bottom-link" href="#">Cancellation policy</a>
+                            </p>
+                            <img src="img/payment.png" class="footer__bottom-payment" alt="Payment" />
+                        </div>
+                        <!-- /.footer-bottom -->
                     </div>
-                    <!-- /.footer-bottom -->
-                </div>
-                <!-- /.footer-container -->
+                    <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
     <!-- Modals -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <!-- Booking-modal -->
+        <div class="booking-modal">
+            <button class="booking-modal__close">
+          <img src="img/svg/close.svg" alt="Close" />
+        </button>
+            <h3 class="booking-modal__title">Booking</h3>
+            <form action="send.php" method="POST" class="booking-form validate-form" name="booking-form">
+                <input class="booking-form__input" type="text" placeholder="Your Full Name*" name="name" required minlength="2" />
+                <input class="booking-form__input mask-phone" type="tel" placeholder="Phone Number*" name="phone" required />
+                <input class="booking-form__input" type="email" placeholder="Email*" name="email" required />
+                <textarea class="booking-form__message" placeholder="Message" name="message"></textarea>
+                <fieldset class="booking-modal__footer">
+                    <input class="booking-modal__submit" type="submit" value="Send" />
+                    <p>* Required Fields</p>
+                </fieldset>
+            </form>
+            <!-- /.booking-form -->
+        </div>
+        <!-- /.booking-modal -->
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/bgscroll.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/main.js"></script>
-
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></>
     <script src="js/map.js"></script> -->
 </body>

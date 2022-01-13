@@ -602,7 +602,7 @@ main {
 .subscribe__title {
   font-size: 24px;
   font-weight: 300;
-  margin-right: 10px;
+  margin-right: 9%;
 }
 .subscribe__title span {
   font-size: 36px;
@@ -611,7 +611,7 @@ main {
 }
 
 .container--subscribe {
-  padding: 0 13.1%;
+  padding: 0 190px;
   display: flex;
   justify-content: space-between;
 }
@@ -914,7 +914,6 @@ main {
 }
 .footer__contacts-item {
   display: flex;
-  margin-left: 5px;
   margin-bottom: 20px;
 }
 .footer__contacts-item a {
@@ -1152,6 +1151,11 @@ main {
 }
 
 /******* Media **********/
+@media (min-width: 1440px) {
+  .header-nav {
+    padding: 30px 0;
+  }
+}
 @media (max-width: 1430px) {
   .container {
     max-width: 80%;
@@ -1277,6 +1281,23 @@ main {
   }
   .search__button:active {
     background-color: #f04e6d;
+  }
+
+  .header-nav__item {
+    position: relative;
+  }
+  .header-nav__item:hover::before {
+    transform: scaleX(1);
+  }
+  .header-nav__item::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.25s;
   }
 
   .booking__button:hover, .booking-modal__submit:hover {
@@ -1760,6 +1781,10 @@ main {
   }
   .footer__iput-group {
     width: 100%;
+    margin-top: 14px;
+  }
+  .footer__iput-group:first-child {
+    margin-top: 0;
   }
   .footer .send-message__contacts {
     flex-wrap: wrap;
@@ -1977,12 +2002,6 @@ main {
   .footer__contacts-text {
     line-height: 21px;
   }
-  .footer__iput-group {
-    margin-top: 14px;
-  }
-  .footer__iput-group:first-child {
-    margin-top: 0;
-  }
   .footer .send-message__text {
     margin-top: 14px;
     margin-bottom: 17px;
@@ -2006,6 +2025,10 @@ main {
   }
 }
 @media (max-width: 320px) {
+  main {
+    padding-top: 15px;
+  }
+
   .activities__item {
     background-position-x: -31px;
   }
