@@ -311,10 +311,12 @@ main {
 }
 .hotel__header-raiting p {
   font-size: 8px;
+  font-weight: 600;
   line-height: 16px;
 }
 .hotel__header-raiting span {
   font-size: 14px;
+  font-weight: 700;
 }
 .hotel__header-raiting span:last-child {
   font-size: 10px;
@@ -1153,7 +1155,7 @@ main {
 /******* Media **********/
 @media (min-width: 1440px) {
   .header-nav {
-    padding: 30px 0;
+    padding: 26px 0;
   }
 }
 @media (max-width: 1430px) {
@@ -1276,6 +1278,10 @@ main {
 }
 /********** Interaktive ***********/
 @media (min-width: 992px) {
+  .user__name:hover {
+    color: #2917c5;
+  }
+
   .search__button:hover {
     background-color: #c71134;
   }
@@ -1305,6 +1311,23 @@ main {
   }
   .booking__button:active, .booking-modal__submit:active {
     background-color: #f04e6d;
+  }
+  .booking__quick a {
+    position: relative;
+  }
+  .booking__quick a:hover::after {
+    transform: scaleX(1);
+  }
+  .booking__quick a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.25s;
   }
 
   .dispatch-message-home:hover {
@@ -1378,6 +1401,9 @@ main {
     background-color: #BDBDBD;
     transform: scaleX(0);
     transition: transform 0.25s;
+  }
+  .footer__social-link path:hover {
+    fill: #c71134;
   }
   .footer .button-submit:hover {
     background-color: #c71134;
